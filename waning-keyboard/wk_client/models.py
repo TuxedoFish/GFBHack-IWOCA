@@ -87,25 +87,3 @@ class CashFlow(db.Model):
 
     def __repr__(self):
         return 'CashFlow {}-{}: ({}, {}, {})'.format(self.user_id, self.id, self.datetime, self.amount, self.type)
-
-
-def create_users(n):
-    users = []
-    for _ in range(n):
-        users.append(user_factory())
-
-    return users
-
-
-def user_factory(username=None, email=None):
-    import random
-    if username is None:
-        username = ''.join(['abcdefghijkl'[random.randint(0, 11)] for _ in range(random.randint(5,12))])
-    return User(username=username, account=username)
-
-
-def cashflow_factory(user, start_date, amounts, timedeltas):
-    output = []
-    for am, td in zip(amounts, timedeltas):
-        output.append(CashFlow(user=user, datetime=start_date+td, amount=am, type=0 if am < 0 else 1))
-    return output

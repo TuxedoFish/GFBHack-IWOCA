@@ -26,8 +26,8 @@ class UserAccount(object):
                 return d
 
     def add_funding(self, amount):
-        response = bank.send_cash(amount=amount, account=self.user.account)
-        return self.add_cashflow(-1 * response['amount'], response['timestamp'], FUNDING_TYPE, ref=response['bank_ref'])
+        cashflow = bank.send_cash(amount=amount, account_to=self.user.account)
+        return self.add_cashflow(-1 * cashflow['amount'], cashflow['timestamp'], FUNDING_TYPE, ref=cashflow['bank_ref'])
 
     def add_cashflow(self, amount, dt, cashflow_type, ref=None):
         """
@@ -48,6 +48,7 @@ class UserAccount(object):
         models.db.session.commit()
 
         self.cashflows = sorted(self.cashflows + [cf], key=lambda x: x.datetime)
+        return cf
 
     def create_loan(self, start_datetime, opening_balance,
                     duration_days=360, interest_daily=0.0005, repayment_frequency_days=30):

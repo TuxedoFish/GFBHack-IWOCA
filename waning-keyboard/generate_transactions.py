@@ -2,6 +2,8 @@
 """
 import csv
 import datetime
+import json
+
 import numpy
 import os.path
 import random
@@ -28,9 +30,6 @@ def generate_random_amount():
     return round(amount, 2)
 
 
-# rounding = ## 10% 1dig, 40% 1dig or nearest 5,
-
-
 def time_now():
     """Accelerated time
     """
@@ -51,20 +50,19 @@ def time_now():
     return new_time
 
 
-def generate_outbound_transaction(
-    amount, account, write=True
+def generate_outbound_transaction(data, write=True
 ):
     transaction = {
         "datetime": time_now().isoformat(),
-        "account_to": account,
-        "account_from": OUR_ACCOUNT,
-        "amount": amount,
+        "account_to": data['account_to'],
+        "account_from": data['account'],
+        "amount": data['amount'],
         "reference": uuid.uuid4().hex,
     }
 
     if write:
         write_transactions([transaction])
-    return transaction
+    return json.dumps(transaction)
 
 
 def generate_inbound_transaction():

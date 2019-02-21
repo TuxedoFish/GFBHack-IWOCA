@@ -27,13 +27,8 @@ def fake_newton_rhapson(x, fun):
     return x_try, res
 
 
-def shifted(days, hours, dt=None):
-    dt = dt or time_now()
+def shifted(days, hours, dt):
     return dt + datetime.timedelta(days=days, hours=hours)
-
-
-def time_now():
-    return datetime.datetime.now()
 
 
 def get_date(x):

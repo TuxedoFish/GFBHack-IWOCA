@@ -1,4 +1,6 @@
-from wk_client import logic, app
+from flask import current_app
+
+from wk_client import logic
 from wk_client.constants import FEE_TYPE, INTEREST_TYPES, REPAYMENT_TYPES, DECLINED_STATE_NAME
 from wk_client.constants import MIN_LOAN_AMOUNT, MAX_LOAN_AMOUNT
 from wk_client.logic import approve_user, decline_user
@@ -37,7 +39,7 @@ def get_decision(user, data):
         try:
             raw_decision = logic.evaluate_decision(data)
         except Exception as e:
-            app.logger.error('Unexpected Error evaluating decision. Rejected. %s, %s', e, data)
+            current_app.logger.error('Unexpected Error evaluating decision. Rejected. %s, %s', e, data)
             decision = decline_user(user, time_now())
         else:
             if raw_decision.approved:
@@ -56,16 +58,27 @@ def request_funding(user_account, approval_id, amount, dt):
 
     cur_balance = user_account.balance(get_date(dt))
     if MIN_LOAN_AMOUNT <= cur_balance + amount <= active_decision.amount:
-        user_account.add_funding(amount)
+        try:
+            funding = user_account.add_funding(amount)
+        except ValueError:
+            return None, 'Funding Error'
 
         fee = active_decision.fee_rate * amount + active_decision.fee_amount
         if fee:
-            user_account.add_cashflow(-1*fee, dt, cashflow_type=FEE_TYPE, ref='Internal')
+            user_account.add_cashflow(
+                -1*fee,
+                funding.datetime,
+                cashflow_type=FEE_TYPE,
+                ref='Internal'
+            )
 
-        loan = user_account.create_loan(dt, cur_balance + amount + fee,
-                       duration_days=active_decision.duration_days,
-                       interest_daily=active_decision.interest_daily,
-                       repayment_frequency_days=active_decision.repayment_frequency_days)
+        loan = user_account.create_loan(
+            funding.datetime,
+            cur_balance + amount + fee,
+            duration_days=active_decision.duration_days,
+            interest_daily=active_decision.interest_daily,
+            repayment_frequency_days=active_decision.repayment_frequency_days
+        )
         return loan, None
     else:
         return None, 'Invalid Amount'
