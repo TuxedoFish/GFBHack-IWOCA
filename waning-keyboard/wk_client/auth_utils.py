@@ -24,6 +24,7 @@ def create_user(username, password, account):
 
 @auth.verify_password
 def verify_password(username, password):
+    # TODO: Don't verify if the request is coming from untrusted authority.
     user = User.query.filter_by(username=username).first_or_404()
     if hash_pw(password, username) == user.hashed_password:
         g.user = user

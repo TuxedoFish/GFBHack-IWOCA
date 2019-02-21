@@ -9,8 +9,6 @@ db = SQLAlchemy()
 migrate = Migrate()
 auth = HTTPBasicAuth()
 
-app = Flask(__name__)
-
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
@@ -23,11 +21,11 @@ def create_app(config_class=Config):
 
     return app
 
-app = create_app()
 
 from wk_client import models
 
+app = create_app()
 
 @app.shell_context_processor
 def make_shell_context():
-    return {'db': db, 'User': models.User, 'Post': models.CashFlow, 'Loan': models.Loan, 'Decision': models.Decision}
+    return {'db': db, 'User': models.User, 'CashFlow': models.CashFlow, 'Loan': models.Loan, 'Decision': models.Decision}

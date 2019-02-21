@@ -1,5 +1,5 @@
 export FLASK_APP=wk_client
-export BANK_URL=http://10.0.0.1:5000
+export BANK_URL=https://10.0.0.1:5000
 export BANK_PORT=80
 export BANK_USERNAME=...
 export BANK_PASSWORD=...

@@ -78,6 +78,11 @@ class TestGetInfo(AppTestCase):
         rv = self.client.get('/get_info')
         assert rv.data.decode() == json.dumps(mock_product)
 
+    def test_get_info(self):
+        # TODO: Replace with schema validation test.
+        rv = self.client.get('/get_info')
+        assert isinstance(json.loads(rv.data.decode()), dict)
+
 
 class TestGetDecisionGet(AppTestCase):
     @mock.patch('wk_client.logic.get_requirements')
@@ -167,6 +172,45 @@ class TestGetDecisionPost(AppTestCase):
         expected_presentation = decision.to_dict()
         assert json.loads(rv.data) == {'requirements': EXAMPLE_REQUIREMENTS, 'decision': expected_presentation}
 
+    @mock.patch('wk_client.logic.evaluate_decision')
+    @mock.patch('wk_client.logic.check_requirements')
+    @mock.patch('wk_client.logic.get_requirements')
+    def test_get_decision_fails(self, mock_get_requirements, mock_check_requirements, mock_evaluate_decision):
+        @staticmethod
+        def raise_value_error():
+            raise ValueError
+
+        mock_check_requirements.return_value = True
+        mock_get_requirements.return_value = EXAMPLE_REQUIREMENTS
+
+        mock_evaluate_decision.side_effect = raise_value_error
+        mock_evaluate_decision.return_value = DecisionParams(
+            approved=True,
+            params={'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+        )
+        tstamp = datetime(2018, 5, 4, 14, 3, 12)
+        rv = post_json(self.client, '/get_decision', data={}, username=b'user2', password=b'pass2', timestamp=tstamp)
+        assert rv.status == '200 OK'
+        assert Decision.query.filter_by(user_id=self.test_user.id).count() == 1
+
+        decision = Decision.query.filter_by(user_id=self.test_user.id)[0]
+        expected_object = {
+            'decision': DECLINED_STATE_NAME,
+            'datetime': tstamp,
+            'interest_daily': None,
+            'amount': None,
+            'duration_days': None,
+            'repayment_frequency_days': None,
+            'fee_rate': None,
+            'fee_amount': None
+        }
+
+        for k, v in expected_object.items():
+            assert getattr(decision, k) == v
+
+        expected_presentation = decision.to_dict()
+        assert json.loads(rv.data)['decision'] == expected_presentation
+
 
 class TestGetDecision(AppTestCase):
     def test_full_approve(self):
@@ -222,7 +266,39 @@ class TestGetDecision(AppTestCase):
         }
         assert json.loads(rv.data) == expected_response
 
+    def test_full_decline(self):
+        test_user = create_user('user4', 'pass4', 'acc4')
+        data = {
+            'basic_questions': {
+                'first_name': 'Shady',
+                'last_name': 'McShadyFace',
+                'date_of_birth': '1994-12-21',
+            },
+            'credit_report': {'score': 1},
+            'company_report': {'opinion': 'passable'},
+        }
 
+        tstamp = datetime(2018, 7, 3, 4, 3, 1)
+
+        rv = post_json(self.client, '/get_decision', data=data, username=b'user4', password=b'pass4', timestamp=tstamp)
+
+        assert rv.status == '200 OK'
+
+        assert Decision.query.filter_by(user_id=test_user.id).count() == 1
+        decision = Decision.query.filter_by(user_id=test_user.id)[0]
+        expected_object = {
+            'decision': DECLINED_STATE_NAME,
+            'datetime': tstamp,
+            'interest_daily': None,
+            'amount': None,
+            'duration_days': None,
+            'repayment_frequency_days': None,
+            'fee_rate': None,
+            'fee_amount': None
+        }
+
+        for k, v in expected_object.items():
+            assert getattr(decision, k) == v, k
 
 
 class TestRequestFunding(AppTestCase):
@@ -306,7 +382,7 @@ class TestRequestFunding(AppTestCase):
 
         expected_loan_params = {
             'id': response_body['funding_reference'],
-            'start_datetime': self.timestamp,
+            'start_datetime': self.timestamp + timedelta(minutes=1),
             'opening_balance': 3500,
             'duration_days': 360,
             'interest_daily': 0.0005,
@@ -316,7 +392,7 @@ class TestRequestFunding(AppTestCase):
         for k, v in expected_loan_params.items():
             assert getattr(loan, k) == v
 
-        mock_send_cash.assert_called_with(amount=3500, account='acc4')
+        mock_send_cash.assert_called_with(amount=3500, account_to='acc4')
 
         assert CashFlow.query.filter_by(user_id=self.test_user.id).count() == 1
         cashflow = CashFlow.query.filter_by(user_id=self.test_user.id)[0]
@@ -333,11 +409,21 @@ class TestRequestFunding(AppTestCase):
     @mock.patch('wk_client.bank.send_cash')
     def test_succeed_with_outstanding_balance(self, mock_send_cash):
         mock_send_cash.return_value = {
-            'amount': 2000, 'timestamp': self.timestamp + timedelta(minutes=1), 'bank_ref': 'foo'}
+            'amount': 2000,
+            'timestamp': self.timestamp + timedelta(minutes=1),
+            'bank_ref': 'foo'
+        }
         ApprovalFactory(
-            user=self.test_user, datetime=self.timestamp - timedelta(days=5, minutes=10), id=10, amount=5000)
+            user=self.test_user,
+            datetime=self.timestamp - timedelta(days=5, minutes=10),
+            id=10,
+            amount=5000
+        )
         create_loan_with_funding(
-            user=self.test_user, funding_amount=3000, start_datetime=self.timestamp - timedelta(minutes=10))
+            user=self.test_user,
+            funding_amount=3000,
+            start_datetime=self.timestamp - timedelta(minutes=10)
+        )
         payload = {'amount': 2000, 'approval_reference': 10}
         response = self.post_with_auth(payload)
 
@@ -348,7 +434,7 @@ class TestRequestFunding(AppTestCase):
         loan = Loan.query.get(response_body['funding_reference'])
 
         expected_loan_params = {
-            'start_datetime': self.timestamp,
+            'start_datetime': self.timestamp + timedelta(minutes=1),
             'opening_balance': 5000,
             'duration_days': 360,
             'interest_daily': 0.0005,
@@ -358,7 +444,7 @@ class TestRequestFunding(AppTestCase):
         for k, v in expected_loan_params.items():
             assert getattr(loan, k) == v
 
-        mock_send_cash.assert_called_with(amount=2000, account='acc4')
+        mock_send_cash.assert_called_with(amount=2000, account_to='acc4')
 
     @mock.patch('wk_client.bank.send_cash')
     def test_fail_with_outstanding_balance(self, mock_send_cash):
@@ -385,3 +471,70 @@ class TestRequestFunding(AppTestCase):
         response = post_json(self.client, '/request_funding', data=payload, timestamp=self.timestamp)
         assert '200' not in response.status
         assert not mock_send_cash.called
+
+    @mock.patch('wk_client.bank.send_cash')
+    def test_sending_cash_failed(self, mock_send_cash):
+        def raise_value_error(*args, **kwargs):
+            raise ValueError
+        mock_send_cash.side_effect = raise_value_error
+        mock_send_cash.return_value = {
+            'amount': 3500, 'timestamp': self.timestamp + timedelta(minutes=1), 'bank_ref': 'foo'}
+        ApprovalFactory(user=self.test_user, datetime=self.timestamp - timedelta(minutes=5), amount=5000, id=9)
+        payload = {'amount': 3500, 'approval_reference': 9}
+        response = self.post_with_auth(payload)
+        assert response.status_code == 400
+
+    @mock.patch('wk_client.bank.send_cash')
+    def test_request_funding_with_fee(self, mock_send_cash):
+        mock_send_cash.return_value = {
+            'amount': 4000, 'timestamp': self.timestamp + timedelta(minutes=1), 'bank_ref': 'foo'}
+        ApprovalFactory(user=self.test_user, datetime=self.timestamp - timedelta(minutes=5), amount=5000, id=9, fee_amount=100, fee_rate=0.001)
+        payload = {'amount': 4000, 'approval_reference': 9}
+        response = self.post_with_auth(payload)
+        assert response.status == '200 OK'
+
+        response_body = json.loads(response.data)
+        assert set(response_body.keys()) == set(['funding_reference', 'repayment_schedule', 'repayment_account'])
+
+        exp_schedule = {(self.timestamp.date() + timedelta(30 * i)).isoformat(): 376.52 for i in range(1, 12)}
+        exp_schedule[(self.timestamp.date() + timedelta(30 * 12)).isoformat()] = 376.4
+        assert response_body['repayment_schedule'] == exp_schedule
+        assert response_body['repayment_account'] == BANK_ACCOUNT
+
+        assert Loan.query.filter_by(user_id=self.test_user.id).count() == 1
+        loan = Loan.query.filter_by(user_id=self.test_user.id)[0]
+
+        expected_loan_params = {
+            'id': response_body['funding_reference'],
+            'start_datetime': self.timestamp + timedelta(minutes=1),
+            'opening_balance': 4000 + 100 + 4,
+            'duration_days': 360,
+            'interest_daily': 0.0005,
+            'repayment_frequency_days': 30,
+            'repayment_amount': 376.52
+        }
+        for k, v in expected_loan_params.items():
+            assert getattr(loan, k) == v
+
+        mock_send_cash.assert_called_with(amount=4000, account_to='acc4')
+
+        assert CashFlow.query.filter_by(user_id=self.test_user.id).count() == 2
+        cashflows = CashFlow.query.filter_by(user_id=self.test_user.id)
+        expected_funding_params = {
+            'datetime': self.timestamp + timedelta(minutes=1),
+            'amount': -4000,
+            'type': 0,
+            'bank_ref': 'foo'
+        }
+
+        expected_fee_params = {
+            'datetime': self.timestamp + timedelta(minutes=1),
+            'amount': -104,
+            'type': 2,
+        }
+
+        for k, v in expected_funding_params.items():
+            assert getattr(cashflows[0], k) == v
+
+        for k, v in expected_fee_params.items():
+            assert getattr(cashflows[1], k) == v

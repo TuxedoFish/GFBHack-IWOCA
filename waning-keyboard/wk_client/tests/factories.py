@@ -1,12 +1,14 @@
 import uuid
 
+from datetime import datetime
 import factory
 import factory.fuzzy
 from factory.alchemy import SQLAlchemyModelFactory
 
 from wk_client import db, models
 from wk_client.constants import APPROVED_STATE_NAME, DECLINED_STATE_NAME
-from wk_client.utils import time_now
+
+BASE_TIME = datetime(2015, 4, 1, 9, 15)
 
 
 class UserFactory(SQLAlchemyModelFactory):
@@ -26,7 +28,7 @@ class ApprovalFactory(SQLAlchemyModelFactory):
 
     decision = APPROVED_STATE_NAME
     user = factory.SubFactory(UserFactory)
-    datetime = time_now()
+    datetime = BASE_TIME
 
     interest_daily = 0.0005
     amount = factory.fuzzy.FuzzyChoice([1000, 5000, 15000, 25000])
@@ -44,7 +46,7 @@ class DeclineFactory(SQLAlchemyModelFactory):
 
     decision = DECLINED_STATE_NAME
     user = factory.SubFactory(UserFactory)
-    datetime = time_now()
+    datetime = BASE_TIME
 
 
 class DecisionFactory(ApprovalFactory):
@@ -57,7 +59,7 @@ class LoanFactory(SQLAlchemyModelFactory):
         sqlalchemy_session = db.session
 
     user = factory.SubFactory(UserFactory)
-    start_datetime = time_now()
+    start_datetime = BASE_TIME
 
     opening_balance = 5000.
     duration_days = 360.
@@ -73,7 +75,7 @@ class RepaymentFactory(SQLAlchemyModelFactory):
         sqlalchemy_session = db.session
 
     user = factory.SubFactory(UserFactory)
-    datetime = time_now()
+    datetime = BASE_TIME
     amount = 1000.00
     type = 1
     bank_ref = uuid.uuid4().hex
