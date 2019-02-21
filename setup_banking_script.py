@@ -13,7 +13,7 @@ GOD_ACCOUNT = 'a26f3abc-a275-4987-9901-5abaf33b35ab'
 
 if __name__ == '__main__':
     response = requests.post('{}:{}/create_account'.format(BANK_HOST, BANK_PORT),
-                             data={'username': BANK_USERNAME, 'password': BANK_PASSWORD})
+                             data={'username': BANK_USERNAME, 'password': BANK_PASSWORD}, verify=False)
 
     if response.status_code == 200:
         account = json.loads(response.content)['account']
