@@ -1,6 +1,7 @@
 import bisect
 import datetime
 import json
+import logging
 from collections import namedtuple
 
 import dateutil
@@ -12,7 +13,7 @@ from wk_client.models import CashFlow, Loan
 from wk_client.utils import get_repayment_amount, get_date
 
 Rate = namedtuple('rate', ['date', 'rate'])
-
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
 class UserAccount(object):
     def __init__(self, user_id=None):
