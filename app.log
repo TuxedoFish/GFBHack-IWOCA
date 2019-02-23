@@ -1,0 +1,10 @@
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kelly', 'middle_names': 'Robert', 'last_name': 'Downs', 'date_of_birth': '1988-02-25', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Kelly', 'middle_names': 'Robert', 'last_name': 'Downs', 'date_of_birth': '1988-02-25', 'score': 80, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Nelson-Hurley', 'company_number': 871003843, 'company_type': 'Limited Company', 'incorporation_date': '2016-07-21', 'liabilities': 43000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 30620000.0, 'number_of_employees': 268, 'region': 'Scotland', 'assets': 1957000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 45.51162790697674
+root - WARNING - decision made :
+root - WARNING - <wk_client.logic.DecisionParams object at 0x11675f4a8>

@@ -1,4 +1,5 @@
 from flask import current_app
+import logging
 
 from wk_client import logic
 from wk_client.constants import FEE_TYPE, INTEREST_TYPES, REPAYMENT_TYPES, DECLINED_STATE_NAME
@@ -7,6 +8,7 @@ from wk_client.logic import approve_user, decline_user
 from wk_client.request_utils import time_now
 from wk_client.utils import get_date
 
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
 def get_product_data():
     # TODO: The product details of this endpoint should be tied in to the config, somehow, so that the actual product would also follow it.
@@ -42,6 +44,9 @@ def get_decision(user, data):
             current_app.logger.error('Unexpected Error evaluating decision. Rejected. %s, %s', e, data)
             decision = decline_user(user, time_now())
         else:
+            logging.warning("decision made :")
+            logging.warning(raw_decision.approved)
+            logging.warning(raw_decision.params)
             if raw_decision.approved:
                 decision = approve_user(user, time_now(), **raw_decision.params)
             else:
