@@ -1,4 +1,5 @@
 import json
+import logging
 
 from flask import Blueprint, request, g
 from werkzeug.exceptions import BadRequest
@@ -12,6 +13,7 @@ from wk_client.utils import get_date
 
 bp = Blueprint('routes', __name__)
 
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname) - %(message)s')
 
 @bp.route('/')
 @bp.route('/index')
@@ -47,6 +49,8 @@ def test_login():
 @bp.route('/get_decision', methods=('GET', 'POST'))
 @auth.login_required
 def get_decision():
+    logging.warning("Getting decision for ~ ")
+    logging.warning(request.get_json())
     if request.method == 'GET':
         return json.dumps(endpoints.get_decision(g.user, None))
     elif request.method == 'POST':

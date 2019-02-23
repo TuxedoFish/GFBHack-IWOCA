@@ -292,10 +292,13 @@ def check_requirements(data, requirements):
 
 
 def evaluate_decision(data):
-    dob = dateutil.parser.parse(data['basic_questions']['date_of_birth'])
-    if dob.year < 1989:
-        params = {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
-        return DecisionParams(approved=True, params=params)
+    if data.get('identification') is None:
+        dob = dateutil.parser.parse(data['basic_questions']['date_of_birth'])
+        if dob.year < 1989:
+            params = {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+            return DecisionParams(approved=True, params=params)
+        else:
+            return DecisionParams(approved=False)
     else:
-        return DecisionParams(approved=False)
-
+            print("Evaluated company decision")
+            return DecisionParams(approved=True)
