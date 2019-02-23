@@ -6,7 +6,7 @@ import dateutil
 
 from wk_client import models, bank
 from wk_client.constants import APPROVED_STATE_NAME, DECLINED_STATE_NAME, FUNDING_TYPE, DECISION_VALID_FOR_DAYS, \
-    EXAMPLE_DOC_REQUIREMENTS
+    PERSON_REQUIREMENTS, COMPANY_REQUIREMENTS
 from wk_client.models import CashFlow, Loan
 from wk_client.utils import get_repayment_amount, get_date
 
@@ -276,7 +276,10 @@ class DecisionParams:
 
 
 def get_requirements(data):
-    return EXAMPLE_DOC_REQUIREMENTS
+    if data.get('identification') is None:
+        return PERSON_REQUIREMENTS
+    else:
+        return COMPANY_REQUIREMENTS
 
 
 def check_requirements(data, requirements):
@@ -286,7 +289,6 @@ def check_requirements(data, requirements):
         if not data.get(k):
             return False
     return True
-
 
 
 def evaluate_decision(data):
