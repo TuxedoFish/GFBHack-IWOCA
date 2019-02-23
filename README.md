@@ -8,7 +8,7 @@ For some reason I had to set waning-keyboard as PYTHONPATH. Once done, autodetec
 
 ## Installation
 1. Clone repo, e.g.: `git clone https://github.com/TuxedoFish/GFBHack-IWOCA.git'
-1. Create virtualenv, e.g.: `virtualenv -p python3 env`
+1. Create virtualenv, e.g.: `virtualenv -p python3 venv`
 1. Activate virtualenv, e.g.: `source env/bin/activate`
 1. Install requirements, e.g.: `pip install -r requirements.txt`
 1. `export FLASK_APP=wk_client`
