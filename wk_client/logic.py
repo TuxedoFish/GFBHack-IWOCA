@@ -291,11 +291,16 @@ def check_requirements(data, requirements):
 
 
 def evaluate_decision(data):
-    ratio = data['company_report']['assets'] / data['company_report']['liabilities']
+    if(data['company_report']['liabilities']==0):
+        ratio = 2
+    else:
+        ratio = data['company_report']['assets'] / data['company_report']['liabilities']
+
+
     logging.warning("evaluated decision:")
     logging.warning(ratio)
     if ratio > 1:
-        params = {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+        params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
         return DecisionParams(approved=True, params=params)
     else:
         return DecisionParams(approved=False)

@@ -1,10 +1,29 @@
 root - WARNING - Getting decision for ~ 
-root - WARNING - {}
-root - WARNING - Getting decision for ~ 
-root - WARNING - {}
-root - WARNING - Getting decision for ~ 
-root - WARNING - {'basic_questions': {'first_name': 'Kelly', 'middle_names': 'Robert', 'last_name': 'Downs', 'date_of_birth': '1988-02-25', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Kelly', 'middle_names': 'Robert', 'last_name': 'Downs', 'date_of_birth': '1988-02-25', 'score': 80, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Nelson-Hurley', 'company_number': 871003843, 'company_type': 'Limited Company', 'incorporation_date': '2016-07-21', 'liabilities': 43000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 30620000.0, 'number_of_employees': 268, 'region': 'Scotland', 'assets': 1957000.0}}
+root - WARNING - {'basic_questions': {'first_name': 'Victoria', 'middle_names': 'Aaron', 'last_name': 'Alvarez', 'date_of_birth': '2003-01-27', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Victoria', 'middle_names': 'Aaron', 'last_name': 'Alvarez', 'date_of_birth': '2003-01-27', 'score': 79, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 4, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Lawrence, Rivas and Boone', 'company_number': 515200633, 'company_type': 'Limited Company', 'incorporation_date': '1981-06-30', 'liabilities': 29000.0, 'score': 32, 'opinion': 'Woeful', 'turnover': 69000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 33000.0}}
 root - WARNING - evaluated decision:
-root - WARNING - 45.51162790697674
+root - WARNING - 1.1379310344827587
 root - WARNING - decision made :
-root - WARNING - <wk_client.logic.DecisionParams object at 0x11675f4a8>
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Isabella', 'middle_names': 'Lindsey', 'last_name': 'Hinton', 'date_of_birth': '1959-01-23', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Isabella', 'middle_names': 'Lindsey', 'last_name': 'Hinton', 'date_of_birth': '1959-01-23', 'score': 96, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 1, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Gentry-Figueroa', 'company_number': 844319338, 'company_type': 'Limited Company', 'incorporation_date': '2004-11-05', 'liabilities': 0.0, 'score': 3, 'opinion': 'Woeful', 'turnover': 90000.0, 'number_of_employees': 1, 'region': 'East Midlands', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Rebecca', 'last_name': 'Johnson', 'date_of_birth': '1918-08-01', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Rebecca', 'last_name': 'Johnson', 'date_of_birth': '1918-08-01', 'score': 93, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Mcgrath-Frey', 'company_number': 351323447, 'company_type': 'Limited Company', 'incorporation_date': '2014-08-22', 'liabilities': 38000.0, 'score': 33, 'opinion': 'Woeful', 'turnover': 12000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 65000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.7105263157894737
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
