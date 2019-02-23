@@ -1,0 +1,7 @@
+export FLASK_APP=wk_client
+export BANK_HOST=https://10.78.180.244
+export BANK_PORT=5000
+export BANK_USERNAME=TEAMLUCKY13
+export BANK_PASSWORD=Ch1MU5Cy31
+export SECRET_KEY=876523
+export FLASK_ENV=development
