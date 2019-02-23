@@ -13,7 +13,7 @@ from wk_client.utils import get_date
 
 bp = Blueprint('routes', __name__)
 
-logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname) - %(message)s')
+logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
 @bp.route('/')
 @bp.route('/index')

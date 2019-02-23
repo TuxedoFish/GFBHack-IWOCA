@@ -1,7 +1,5 @@
 
 EXAMPLE_DOC_REQUIREMENTS = ['basic_questions', 'credit_report', 'company_report']
-PERSON_REQUIREMENTS = ['basic_questions', 'driving_license', 'credit_report']
-COMPANY_REQUIREMENTS = ['identification', 'company_report']
 
 EXAMPLE_PERSON = {
     'basic_questions': {

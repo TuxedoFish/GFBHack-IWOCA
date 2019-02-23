@@ -1,12 +1,13 @@
 import bisect
 import datetime
+import json
 from collections import namedtuple
 
 import dateutil
 
 from wk_client import models, bank
 from wk_client.constants import APPROVED_STATE_NAME, DECLINED_STATE_NAME, FUNDING_TYPE, DECISION_VALID_FOR_DAYS, \
-    PERSON_REQUIREMENTS, COMPANY_REQUIREMENTS
+    EXAMPLE_DOC_REQUIREMENTS
 from wk_client.models import CashFlow, Loan
 from wk_client.utils import get_repayment_amount, get_date
 
@@ -276,10 +277,7 @@ class DecisionParams:
 
 
 def get_requirements(data):
-    if data.get('identification') is None:
-        return PERSON_REQUIREMENTS
-    else:
-        return COMPANY_REQUIREMENTS
+    return EXAMPLE_DOC_REQUIREMENTS
 
 
 def check_requirements(data, requirements):
@@ -292,13 +290,11 @@ def check_requirements(data, requirements):
 
 
 def evaluate_decision(data):
-    if data.get('identification') is None:
-        dob = dateutil.parser.parse(data['basic_questions']['date_of_birth'])
-        if dob.year < 1989:
-            params = {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
-            return DecisionParams(approved=True, params=params)
-        else:
-            return DecisionParams(approved=False)
+    ratio = data['company_report']['assets'] / data['company_report']['liabilities']
+    logging.warning("evaluated decision:")
+    logging.warning(ratio)
+    if ratio > 1:
+        params = {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+        return DecisionParams(approved=True, params=params)
     else:
-            print("Evaluated company decision")
-            return DecisionParams(approved=True)
+        return DecisionParams(approved=False)
