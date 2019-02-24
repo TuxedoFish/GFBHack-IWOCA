@@ -3,6 +3,7 @@ import datetime
 import json
 import logging
 from collections import namedtuple
+from wk_client.risk_model import XGB_classifier
 
 import dateutil
 
@@ -291,6 +292,7 @@ def check_requirements(data, requirements):
 
 
 def evaluate_decision(data):
+    model = XGB_classifier()
     if(data['company_report']['liabilities']==0):
         ratio = 2
     else:
