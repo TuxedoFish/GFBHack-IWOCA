@@ -299,7 +299,7 @@ def evaluate_decision(data):
     logging.warning("evaluated decision:")
     logging.warning(ratio)
     if ratio > 1:
-        params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.00004, 'fee_amount': 0, 'fee_rate': 0}
+        params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
         return DecisionParams(approved=True, params=params)
     else:
         return DecisionParams(approved=False)
