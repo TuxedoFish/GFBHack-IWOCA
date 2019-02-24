@@ -1,31 +1,23 @@
-import numpy as np
 import pandas as pd
 from xgboost import XGBClassifier
 import os
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 
-retro_data = pd.read_csv(os.path.abspath('wk_client/retro_data.csv'))
 
-y = retro_data['outcome']
+class XGB_classifier:
 
-X = retro_data.drop(columns=['Unnamed: 0', 'outcome','loan_duration','company__opinion','company__region'])
+    def __init__(self):
+        retro_data = pd.read_csv(os.path.abspath('wk_client/retro_data.csv'))
 
-# check accuracy of the xgboost model
+        y = retro_data['outcome']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+        X = retro_data.drop(columns=['Unnamed: 0', 'outcome', 'loan_duration', 'company__opinion', 'company__region'])
 
-xgboost = XGBClassifier(learning_rate=0.1, n_estimators=100, max_depth=5,
-                        min_child_weight=3, gamma=0.2, subsample=0.6, colsample_bytree=1.0,
-                        objective='binary:logistic', nthread=4, scale_pos_weight=1)
+        self.xgboost = XGBClassifier(learning_rate=0.1, n_estimators=100, max_depth=5,
+                                min_child_weight=3, gamma=0.2, subsample=0.6, colsample_bytree=1.0,
+                                objective='binary:logistic', nthread=4, scale_pos_weight=1)
 
-xgboost.fit(X_train, y_train)
+        self.xgboost.fit(X, y)
 
-y_pred = xgboost.predict(X_test)
-
-accuracy_score(y_test, y_pred)
-
-# run model on full set of data
-
-xgboost.fit(X, y)
-
+    def _predict(self, customer_data):
+        return self.xgboost.predict(customer_data)
+    
