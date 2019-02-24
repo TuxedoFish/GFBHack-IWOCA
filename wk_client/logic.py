@@ -296,11 +296,10 @@ def evaluate_decision(data):
     else:
         ratio = data['company_report']['assets'] / data['company_report']['liabilities']
 
-
     logging.warning("evaluated decision:")
     logging.warning(ratio)
     if ratio > 1:
-        params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.01, 'fee_amount': 0, 'fee_rate': 0}
+        params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.00004, 'fee_amount': 0, 'fee_rate': 0}
         return DecisionParams(approved=True, params=params)
     else:
         return DecisionParams(approved=False)

@@ -21,13 +21,13 @@ def get_product_data():
         'duration_representative': 360,
         'interest_type': INTEREST_TYPES['compound'],
         'interest_min': 0.02,
-        'interest_max': 0.1,
+        'interest_max': 0.2,
         'interest_representative': 0.05,
-        'fee_flat': 100,
+        'fee_flat': 0,
         'fee_rate_min': 0.,
         'fee_rate_max': 0.,
         'apr': 0.20,
-        'repayment_type': REPAYMENT_TYPES[2],
+        'repayment_type': REPAYMENT_TYPES[1],
         'repayment_frequency': '30d'  # Can repayments fall on weekends?
     }}
 

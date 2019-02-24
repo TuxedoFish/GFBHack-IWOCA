@@ -51,7 +51,7 @@ class Decision(db.Model):
             'amount_max': self.amount,
             'duration': self.duration_days,
             'interest_type': INTEREST_TYPES['compound'],
-            'interest': round((1+self.interest_daily)**365 - 1, 5) if self.interest_daily else None,
+            'interest': round((1+self.interest_daily)**365-1, 5) if self.interest_daily else None,
             'fee_flat': self.fee_amount,
             'fee_rate': self.fee_rate,
             'repayment_type': REPAYMENT_TYPES[1],
