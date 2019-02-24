@@ -1,24 +1,365 @@
 root - WARNING - Getting decision for ~ 
-root - WARNING - {'basic_questions': {'first_name': 'Victoria', 'middle_names': 'Aaron', 'last_name': 'Alvarez', 'date_of_birth': '2003-01-27', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Victoria', 'middle_names': 'Aaron', 'last_name': 'Alvarez', 'date_of_birth': '2003-01-27', 'score': 79, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 4, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Lawrence, Rivas and Boone', 'company_number': 515200633, 'company_type': 'Limited Company', 'incorporation_date': '1981-06-30', 'liabilities': 29000.0, 'score': 32, 'opinion': 'Woeful', 'turnover': 69000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 33000.0}}
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Tina', 'middle_names': 'Kevin', 'last_name': 'Morris', 'date_of_birth': '1950-07-03', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Tina', 'middle_names': 'Kevin', 'last_name': 'Morris', 'date_of_birth': '1950-07-03', 'score': 75, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 14, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Rhodes Group', 'company_number': 248413773, 'company_type': 'Limited Company', 'incorporation_date': '1987-07-01', 'liabilities': 18000.0, 'score': 8, 'opinion': 'Woeful', 'turnover': 43000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 65000.0}}
 root - WARNING - evaluated decision:
-root - WARNING - 1.1379310344827587
+root - WARNING - 3.611111111111111
 root - WARNING - decision made :
 root - WARNING - True
-root - WARNING - {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 1000.0, bc9aeddcfd924c6ba29046e71921db47
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 229
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': 'bc9aeddcfd924c6ba29046e71921db47', 'amount': 1000.0}, response <Response [200]>
 root - WARNING - Getting decision for ~ 
-root - WARNING - {'basic_questions': {'first_name': 'Isabella', 'middle_names': 'Lindsey', 'last_name': 'Hinton', 'date_of_birth': '1959-01-23', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Isabella', 'middle_names': 'Lindsey', 'last_name': 'Hinton', 'date_of_birth': '1959-01-23', 'score': 96, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 1, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Gentry-Figueroa', 'company_number': 844319338, 'company_type': 'Limited Company', 'incorporation_date': '2004-11-05', 'liabilities': 0.0, 'score': 3, 'opinion': 'Woeful', 'turnover': 90000.0, 'number_of_employees': 1, 'region': 'East Midlands', 'assets': 0.0}}
+root - WARNING - {'basic_questions': {'first_name': 'Jill', 'middle_names': 'Glenda', 'last_name': 'Burton', 'date_of_birth': '1922-06-15', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Jill', 'middle_names': 'Glenda', 'last_name': 'Burton', 'date_of_birth': '1922-06-15', 'score': 99, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Chan-Johnson', 'company_number': 807649883, 'company_type': 'Limited Company', 'incorporation_date': '2009-04-13', 'liabilities': 42000.0, 'score': 35, 'opinion': 'Good', 'turnover': 24000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 32000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7619047619047619
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Thomas', 'last_name': 'Allen', 'date_of_birth': '1935-12-20', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Thomas', 'last_name': 'Allen', 'date_of_birth': '1935-12-20', 'score': 87, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hughes, West and Sutton', 'company_number': 463402648, 'company_type': 'Limited Company', 'incorporation_date': '1980-12-07', 'liabilities': 71000.0, 'score': 46, 'opinion': 'Outstanding', 'turnover': 112519000.0, 'number_of_employees': 568, 'region': 'East Midlands', 'assets': 2475000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 34.859154929577464
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Nicole', 'middle_names': 'Darryl', 'last_name': 'Brown', 'date_of_birth': '1940-03-10', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Nicole', 'middle_names': 'Darryl', 'last_name': 'Brown', 'date_of_birth': '1940-03-10', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Olson, Daniels and Turner', 'company_number': 787821409, 'company_type': 'Limited Company', 'incorporation_date': '1976-06-06', 'liabilities': 34000.0, 'score': 33, 'opinion': 'Woeful', 'turnover': 23000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 26000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7647058823529411
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+flask.app - INFO - Sending Transaction: 1000.0, e37cff827fe74f149acaddfa1a70c9fa
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 229
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': 'e37cff827fe74f149acaddfa1a70c9fa', 'amount': 1000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Suzanne', 'middle_names': 'Ashley', 'last_name': 'Woods', 'date_of_birth': '1965-03-18', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Suzanne', 'middle_names': 'Ashley', 'last_name': 'Woods', 'date_of_birth': '1965-03-18', 'score': 89, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Johnson-Wood', 'company_number': 990677045, 'company_type': 'Limited Company', 'incorporation_date': '1988-06-24', 'liabilities': 20000.0, 'score': 17, 'opinion': 'Woeful', 'turnover': 51000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 30000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.5
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ricky', 'middle_names': 'Kimberly', 'last_name': 'Harrison', 'date_of_birth': '1926-03-27', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Ricky', 'middle_names': 'Kimberly', 'last_name': 'Harrison', 'date_of_birth': '1926-03-27', 'score': 84, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Taylor and Sons', 'company_number': 240829371, 'company_type': 'Limited Company', 'incorporation_date': '1978-03-14', 'liabilities': 218000.0, 'score': 27, 'opinion': 'Poor', 'turnover': 2547000.0, 'number_of_employees': 17, 'region': 'London', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brian', 'middle_names': 'Sarah', 'last_name': 'Hunt', 'date_of_birth': '1903-04-05', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Brian', 'middle_names': 'Sarah', 'last_name': 'Hunt', 'date_of_birth': '1903-04-05', 'score': 84, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Walker, Hoffman and Phillips', 'company_number': 88276931, 'company_type': 'Limited Company', 'incorporation_date': '2016-07-21', 'liabilities': 55000.0, 'score': 31, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 6, 'region': 'South East', 'assets': 94000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.709090909090909
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Adrian', 'middle_names': 'Cheryl', 'last_name': 'Molina', 'date_of_birth': '2011-07-07', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Adrian', 'middle_names': 'Cheryl', 'last_name': 'Molina', 'date_of_birth': '2011-07-07', 'score': 98, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Snow Inc', 'company_number': 993296767, 'company_type': 'Limited Company', 'incorporation_date': '2018-08-31', 'liabilities': 18000.0, 'score': 52, 'opinion': 'Poor', 'turnover': 60000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 51000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.8333333333333335
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ashley', 'middle_names': 'Daniel', 'last_name': 'Garrison', 'date_of_birth': '1911-09-18', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Ashley', 'middle_names': 'Daniel', 'last_name': 'Garrison', 'date_of_birth': '1911-09-18', 'score': 55, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Barrett-Becker', 'company_number': 309487954, 'company_type': 'Limited Company', 'incorporation_date': '2006-07-25', 'liabilities': 69000.0, 'score': 70, 'opinion': 'Outstanding', 'turnover': 30583000.0, 'number_of_employees': 287, 'region': 'West Midlands', 'assets': 25616000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 371.2463768115942
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'score': 74, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Le, Joseph and Ryan', 'company_number': 165077028, 'company_type': 'Limited Company', 'incorporation_date': '2016-03-31', 'liabilities': 14000.0, 'score': 29, 'opinion': 'Woeful', 'turnover': 40000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 14000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Alexander', 'middle_names': 'Jennifer', 'last_name': 'Williams', 'date_of_birth': '1936-06-04', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Alexander', 'middle_names': 'Jennifer', 'last_name': 'Williams', 'date_of_birth': '1936-06-04', 'score': 56, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 26, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Wilson-Schwartz', 'company_number': 765013380, 'company_type': 'Limited Company', 'incorporation_date': '1988-09-20', 'liabilities': 32000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 922752000.0, 'number_of_employees': 5532, 'region': 'London', 'assets': 14139000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 441.84375
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Samantha', 'middle_names': 'Christian', 'last_name': 'Mendoza', 'date_of_birth': '1967-03-28', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Samantha', 'middle_names': 'Christian', 'last_name': 'Mendoza', 'date_of_birth': '1967-03-28', 'score': 61, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 27, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Benitez-Taylor', 'company_number': 646459294, 'company_type': 'Limited Company', 'incorporation_date': '1987-03-03', 'liabilities': 132000.0, 'score': 43, 'opinion': 'Poor', 'turnover': 273906000.0, 'number_of_employees': 45, 'region': 'North West', 'assets': 334000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.5303030303030303
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Justin', 'middle_names': 'Jennifer', 'last_name': 'Gentry', 'date_of_birth': '1962-11-14', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Justin', 'middle_names': 'Jennifer', 'last_name': 'Gentry', 'date_of_birth': '1962-11-14', 'score': 100, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 8}, 'company_report': {'company_name': 'Gates-Willis', 'company_number': 873735593, 'company_type': 'Limited Company', 'incorporation_date': '2010-05-03', 'liabilities': 91000.0, 'score': 57, 'opinion': 'Poor', 'turnover': 21220000.0, 'number_of_employees': 44, 'region': 'East Midlands', 'assets': 5197000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 57.10989010989011
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'James', 'middle_names': 'Victoria', 'last_name': 'Reyes', 'date_of_birth': '1921-03-30', 'amount_requested': 3000}, 'credit_report': {'first_name': 'James', 'middle_names': 'Victoria', 'last_name': 'Reyes', 'date_of_birth': '1921-03-30', 'score': 90, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 29, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Owens LLC', 'company_number': 624760048, 'company_type': 'Limited Company', 'incorporation_date': '1999-10-17', 'liabilities': 24000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 17359000.0, 'number_of_employees': 2265, 'region': 'North West', 'assets': 20941000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 872.5416666666666
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Wendy', 'middle_names': 'Christina', 'last_name': 'Mills', 'date_of_birth': '2011-02-03', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Wendy', 'middle_names': 'Christina', 'last_name': 'Mills', 'date_of_birth': '2011-02-03', 'score': 85, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Johnston LLC', 'company_number': 572784163, 'company_type': 'Limited Company', 'incorporation_date': '2005-09-25', 'liabilities': 92000.0, 'score': 39, 'opinion': 'Outstanding', 'turnover': 46826000.0, 'number_of_employees': 394, 'region': 'North West', 'assets': 2523000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 27.42391304347826
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Vincent', 'middle_names': 'Shannon', 'last_name': 'Roberson', 'date_of_birth': '1987-02-21', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Vincent', 'middle_names': 'Shannon', 'last_name': 'Roberson', 'date_of_birth': '1987-02-21', 'score': 86, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Howard-Marquez', 'company_number': 164183050, 'company_type': 'Limited Company', 'incorporation_date': '1999-12-10', 'liabilities': 36000.0, 'score': 7, 'opinion': 'Woeful', 'turnover': 15000.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 94000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.611111111111111
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Glenn', 'middle_names': 'Shannon', 'last_name': 'Wolfe', 'date_of_birth': '1969-04-13', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Glenn', 'middle_names': 'Shannon', 'last_name': 'Wolfe', 'date_of_birth': '1969-04-13', 'score': 49, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Lewis-Silva', 'company_number': 369923809, 'company_type': 'Limited Company', 'incorporation_date': '2010-12-20', 'liabilities': 218000.0, 'score': 55, 'opinion': 'Good', 'turnover': 26906000.0, 'number_of_employees': 35, 'region': 'Yorkshire and the Humber', 'assets': 3874000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 17.770642201834864
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Bianca', 'middle_names': 'Christina', 'last_name': 'Sanders', 'date_of_birth': '1938-06-22', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Bianca', 'middle_names': 'Christina', 'last_name': 'Sanders', 'date_of_birth': '1938-06-22', 'score': 95, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Hood, Jarvis and Osborne', 'company_number': 116293775, 'company_type': 'Limited Company', 'incorporation_date': '1972-06-26', 'liabilities': 95000.0, 'score': 22, 'opinion': 'Good', 'turnover': 17000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 16000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.16842105263157894
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Chelsea', 'middle_names': 'Jessica', 'last_name': 'Lee', 'date_of_birth': '1947-06-12', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Chelsea', 'middle_names': 'Jessica', 'last_name': 'Lee', 'date_of_birth': '1947-06-12', 'score': 39, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 25, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Ryan-Poole', 'company_number': 210208957, 'company_type': 'Limited Company', 'incorporation_date': '2016-03-30', 'liabilities': 47000.0, 'score': 56, 'opinion': 'Poor', 'turnover': 3946000.0, 'number_of_employees': 178, 'region': 'East', 'assets': 1183000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 25.170212765957448
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Caroline', 'middle_names': 'Kristen', 'last_name': 'Jones', 'date_of_birth': '1974-08-25', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Caroline', 'middle_names': 'Kristen', 'last_name': 'Jones', 'date_of_birth': '1974-08-25', 'score': 24, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 29, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Byrd, Coleman and Lawrence', 'company_number': 830235405, 'company_type': 'Limited Company', 'incorporation_date': '1981-04-23', 'liabilities': 21000.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 12991000.0, 'number_of_employees': 5600, 'region': 'West Midlands', 'assets': 11556000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 550.2857142857143
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Cassandra', 'middle_names': 'Jessica', 'last_name': 'Bowman', 'date_of_birth': '1903-11-22', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Cassandra', 'middle_names': 'Jessica', 'last_name': 'Bowman', 'date_of_birth': '1903-11-22', 'score': 56, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Jones, Taylor and Kelly', 'company_number': 261000828, 'company_type': 'Limited Company', 'incorporation_date': '1984-04-29', 'liabilities': 42000.0, 'score': 66, 'opinion': 'Outstanding', 'turnover': 92413000.0, 'number_of_employees': 4535, 'region': 'North West', 'assets': 18206000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 433.4761904761905
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Bonnie', 'middle_names': 'Joseph', 'last_name': 'Lewis', 'date_of_birth': '1948-12-03', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Bonnie', 'middle_names': 'Joseph', 'last_name': 'Lewis', 'date_of_birth': '1948-12-03', 'score': 67, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Coleman, Byrd and Sutton', 'company_number': 456050678, 'company_type': 'Limited Company', 'incorporation_date': '1983-10-18', 'liabilities': 0.0, 'score': 83, 'opinion': 'Outstanding', 'turnover': 88591000.0, 'number_of_employees': 774, 'region': 'East', 'assets': 14257000.0}}
 root - WARNING - evaluated decision:
 root - WARNING - 2
 root - WARNING - decision made :
 root - WARNING - True
-root - WARNING - {'amount': 15000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
 root - WARNING - Getting decision for ~ 
-root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Rebecca', 'last_name': 'Johnson', 'date_of_birth': '1918-08-01', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Rebecca', 'last_name': 'Johnson', 'date_of_birth': '1918-08-01', 'score': 93, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Mcgrath-Frey', 'company_number': 351323447, 'company_type': 'Limited Company', 'incorporation_date': '2014-08-22', 'liabilities': 38000.0, 'score': 33, 'opinion': 'Woeful', 'turnover': 12000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 65000.0}}
+root - WARNING - {'basic_questions': {'first_name': 'David', 'middle_names': 'Amanda', 'last_name': 'Montes', 'date_of_birth': '1979-06-08', 'amount_requested': 20000}, 'credit_report': {'first_name': 'David', 'middle_names': 'Amanda', 'last_name': 'Montes', 'date_of_birth': '1979-06-08', 'score': 40, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Daniels-Carney', 'company_number': 945712655, 'company_type': 'Limited Company', 'incorporation_date': '2015-05-23', 'liabilities': 305000.0, 'score': 39, 'opinion': 'Outstanding', 'turnover': 1203000.0, 'number_of_employees': 16, 'region': 'London', 'assets': 294000.0}}
 root - WARNING - evaluated decision:
-root - WARNING - 1.7105263157894737
+root - WARNING - 0.9639344262295082
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ronald', 'middle_names': 'Amanda', 'last_name': 'Randall', 'date_of_birth': '1915-09-21', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Ronald', 'middle_names': 'Amanda', 'last_name': 'Randall', 'date_of_birth': '1915-09-21', 'score': 45, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Chavez, Anderson and Smith', 'company_number': 162274926, 'company_type': 'Limited Company', 'incorporation_date': '2001-05-01', 'liabilities': 64000.0, 'score': 67, 'opinion': 'Outstanding', 'turnover': 15798000.0, 'number_of_employees': 36, 'region': 'East', 'assets': 22336000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 349.0
 root - WARNING - decision made :
 root - WARNING - True
-root - WARNING - {'amount': 5000, 'interest_rate': 0.5, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Shelley', 'middle_names': 'Mary', 'last_name': 'Hunter', 'date_of_birth': '1973-12-01', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Shelley', 'middle_names': 'Mary', 'last_name': 'Hunter', 'date_of_birth': '1973-12-01', 'score': 79, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 28, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Martin-Spencer', 'company_number': 889607051, 'company_type': 'Limited Company', 'incorporation_date': '1988-03-19', 'liabilities': 13000.0, 'score': 97, 'opinion': 'Outstanding', 'turnover': 175743000.0, 'number_of_employees': 162, 'region': 'London', 'assets': 2354000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 181.07692307692307
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Derek', 'middle_names': 'John', 'last_name': 'Murphy', 'date_of_birth': '1919-04-27', 'amount_requested': 60000}, 'credit_report': {'first_name': 'Derek', 'middle_names': 'John', 'last_name': 'Murphy', 'date_of_birth': '1919-04-27', 'score': 93, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Matthews, Hopkins and Jackson', 'company_number': 130290375, 'company_type': 'Limited Company', 'incorporation_date': '1976-05-26', 'liabilities': 20000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 990969000.0, 'number_of_employees': 704, 'region': 'Scotland', 'assets': 42095000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2104.75
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 60000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Carla', 'middle_names': 'Martha', 'last_name': 'May', 'date_of_birth': '1910-11-24', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Carla', 'middle_names': 'Martha', 'last_name': 'May', 'date_of_birth': '1910-11-24', 'score': 86, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Peterson, Richards and Smith', 'company_number': 600044242, 'company_type': 'Limited Company', 'incorporation_date': '1984-05-12', 'liabilities': 1634000.0, 'score': 68, 'opinion': 'Poor', 'turnover': 1822000.0, 'number_of_employees': 21, 'region': 'North West', 'assets': 251000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.1536107711138311
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Wesley', 'middle_names': 'Mary', 'last_name': 'Rodgers', 'date_of_birth': '2002-12-05', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Wesley', 'middle_names': 'Mary', 'last_name': 'Rodgers', 'date_of_birth': '2002-12-05', 'score': 65, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Jordan, Koch and Wilcox', 'company_number': 112447551, 'company_type': 'Limited Company', 'incorporation_date': '1997-12-11', 'liabilities': 287000.0, 'score': 32, 'opinion': 'Good', 'turnover': 55358000.0, 'number_of_employees': 360, 'region': 'East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Marcus', 'middle_names': 'Lisa', 'last_name': 'Zuniga', 'date_of_birth': '1962-06-06', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Marcus', 'middle_names': 'Lisa', 'last_name': 'Zuniga', 'date_of_birth': '1962-06-06', 'score': 72, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 3, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Dunlap, Lopez and Bell', 'company_number': 918993212, 'company_type': 'Limited Company', 'incorporation_date': '2012-10-23', 'liabilities': 61000.0, 'score': 75, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 8, 'region': 'Wales', 'assets': 100000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.639344262295082
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jeremiah', 'middle_names': 'Mary', 'last_name': 'Cruz', 'date_of_birth': '1946-11-24', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Jeremiah', 'middle_names': 'Mary', 'last_name': 'Cruz', 'date_of_birth': '1946-11-24', 'score': 54, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Fernandez-Patterson', 'company_number': 900033660, 'company_type': 'Limited Company', 'incorporation_date': '1989-06-06', 'liabilities': 35000.0, 'score': 61, 'opinion': 'Outstanding', 'turnover': 1868000.0, 'number_of_employees': 350, 'region': 'East Midlands', 'assets': 861000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 24.6
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Zachary', 'middle_names': 'Grant', 'last_name': 'Lewis', 'date_of_birth': '1917-05-31', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Zachary', 'middle_names': 'Grant', 'last_name': 'Lewis', 'date_of_birth': '1917-05-31', 'score': 43, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 25, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Cline, Gonzalez and Stone', 'company_number': 121961520, 'company_type': 'Limited Company', 'incorporation_date': '2000-08-03', 'liabilities': 65000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 15633000.0, 'number_of_employees': 59, 'region': 'North West', 'assets': 4998000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 76.8923076923077
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brady', 'middle_names': 'Bryan', 'last_name': 'Gregory', 'date_of_birth': '1999-09-10', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Brady', 'middle_names': 'Bryan', 'last_name': 'Gregory', 'date_of_birth': '1999-09-10', 'score': 77, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 5, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Johnson and Sons', 'company_number': 270510888, 'company_type': 'Limited Company', 'incorporation_date': '2003-06-24', 'liabilities': 112000.0, 'score': 60, 'opinion': 'Woeful', 'turnover': 2276000.0, 'number_of_employees': 15, 'region': 'London', 'assets': 88000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7857142857142857
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ryan', 'middle_names': 'Heather', 'last_name': 'Greene', 'date_of_birth': '2000-05-11', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Ryan', 'middle_names': 'Heather', 'last_name': 'Greene', 'date_of_birth': '2000-05-11', 'score': 66, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Macias LLC', 'company_number': 472208257, 'company_type': 'Limited Company', 'incorporation_date': '2004-03-29', 'liabilities': 70000.0, 'score': 74, 'opinion': 'Good', 'turnover': 17632000.0, 'number_of_employees': 34, 'region': 'Northern Ireland', 'assets': 2495000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 35.642857142857146
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ashley', 'middle_names': 'David', 'last_name': 'Cortez', 'date_of_birth': '1939-02-28', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Ashley', 'middle_names': 'David', 'last_name': 'Cortez', 'date_of_birth': '1939-02-28', 'score': 70, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Wallace LLC', 'company_number': 351856063, 'company_type': 'Limited Company', 'incorporation_date': '1978-10-09', 'liabilities': 0.0, 'score': 35, 'opinion': 'Good', 'turnover': 34000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 12000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Dawn', 'middle_names': 'Barbara', 'last_name': 'Garcia', 'date_of_birth': '1975-11-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Dawn', 'middle_names': 'Barbara', 'last_name': 'Garcia', 'date_of_birth': '1975-11-02', 'score': 36, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Carter-Warren', 'company_number': 174855433, 'company_type': 'Limited Company', 'incorporation_date': '1977-03-07', 'liabilities': 42000.0, 'score': 41, 'opinion': 'Good', 'turnover': 87000.0, 'number_of_employees': 2, 'region': 'Wales', 'assets': 28000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.6666666666666666
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Angela', 'middle_names': 'Emma', 'last_name': 'Edwards', 'date_of_birth': '1942-09-24', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Angela', 'middle_names': 'Emma', 'last_name': 'Edwards', 'date_of_birth': '1942-09-24', 'score': 96, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 24, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Cobb, Weber and Keller', 'company_number': 749265691, 'company_type': 'Limited Company', 'incorporation_date': '1993-08-30', 'liabilities': 0.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 169516000.0, 'number_of_employees': 161, 'region': 'Scotland', 'assets': 6030000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ellen', 'middle_names': 'Mary', 'last_name': 'Salas', 'date_of_birth': '1981-11-25', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Ellen', 'middle_names': 'Mary', 'last_name': 'Salas', 'date_of_birth': '1981-11-25', 'score': 80, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Bender Inc', 'company_number': 479757002, 'company_type': 'Limited Company', 'incorporation_date': '1991-06-11', 'liabilities': 22000.0, 'score': 79, 'opinion': 'Outstanding', 'turnover': 501971000.0, 'number_of_employees': 3326, 'region': 'Ireland', 'assets': 20732000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 942.3636363636364
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Denise', 'middle_names': 'Michael', 'last_name': 'Ramirez', 'date_of_birth': '1904-11-04', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Denise', 'middle_names': 'Michael', 'last_name': 'Ramirez', 'date_of_birth': '1904-11-04', 'score': 97, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Hartman-Lopez', 'company_number': 894373594, 'company_type': 'Limited Company', 'incorporation_date': '1974-09-02', 'liabilities': 73000.0, 'score': 35, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 2, 'region': 'Yorkshire and the Humber', 'assets': 14000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.1917808219178082
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jerry', 'middle_names': 'Katie', 'last_name': 'Myers', 'date_of_birth': '1960-12-05', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Jerry', 'middle_names': 'Katie', 'last_name': 'Myers', 'date_of_birth': '1960-12-05', 'score': 98, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Love, Stevens and Rivera', 'company_number': 767102225, 'company_type': 'Limited Company', 'incorporation_date': '2006-01-27', 'liabilities': 20000.0, 'score': 36, 'opinion': 'Woeful', 'turnover': 83000.0, 'number_of_employees': 1, 'region': 'East Midlands', 'assets': 23000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.15
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Danielle', 'middle_names': 'Cynthia', 'last_name': 'Nguyen', 'date_of_birth': '1941-11-03', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Danielle', 'middle_names': 'Cynthia', 'last_name': 'Nguyen', 'date_of_birth': '1941-11-03', 'score': 75, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'James-Simon', 'company_number': 747735557, 'company_type': 'Limited Company', 'incorporation_date': '1990-05-14', 'liabilities': 104000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 62131000.0, 'number_of_employees': 180, 'region': 'Wales', 'assets': 365416000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 3513.6153846153848
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Katherine', 'middle_names': 'Matthew', 'last_name': 'Lewis', 'date_of_birth': '1944-04-03', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Katherine', 'middle_names': 'Matthew', 'last_name': 'Lewis', 'date_of_birth': '1944-04-03', 'score': 98, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 7}, 'company_report': {'company_name': 'Stark Inc', 'company_number': 401130963, 'company_type': 'Limited Company', 'incorporation_date': '1978-02-01', 'liabilities': 26000.0, 'score': 17, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 49000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.8846153846153846
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Gina', 'middle_names': 'Kim', 'last_name': 'Barrett', 'date_of_birth': '1956-08-29', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Gina', 'middle_names': 'Kim', 'last_name': 'Barrett', 'date_of_birth': '1956-08-29', 'score': 44, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Keith-Gutierrez', 'company_number': 756355812, 'company_type': 'Limited Company', 'incorporation_date': '1990-12-20', 'liabilities': 188000.0, 'score': 26, 'opinion': 'Good', 'turnover': 0.0, 'number_of_employees': 24, 'region': 'Yorkshire and the Humber', 'assets': 111000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.5904255319148937
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Gabriella', 'middle_names': 'Kevin', 'last_name': 'Patel', 'date_of_birth': '1942-12-12', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Gabriella', 'middle_names': 'Kevin', 'last_name': 'Patel', 'date_of_birth': '1942-12-12', 'score': 99, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 8}, 'company_report': {'company_name': 'Gonzalez, George and Wolfe', 'company_number': 79865189, 'company_type': 'Limited Company', 'incorporation_date': '1979-05-08', 'liabilities': 27000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 127265000.0, 'number_of_employees': 71, 'region': 'East', 'assets': 7800000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 288.8888888888889
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Michael', 'middle_names': 'Toni', 'last_name': 'Lopez', 'date_of_birth': '1935-05-27', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Michael', 'middle_names': 'Toni', 'last_name': 'Lopez', 'date_of_birth': '1935-05-27', 'score': 100, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Parks-Estrada', 'company_number': 570968459, 'company_type': 'Limited Company', 'incorporation_date': '1974-09-18', 'liabilities': 29000.0, 'score': -14, 'opinion': 'Poor', 'turnover': 47000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 23000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7931034482758621
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jose', 'middle_names': 'Debra', 'last_name': 'Brown', 'date_of_birth': '1990-11-29', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Jose', 'middle_names': 'Debra', 'last_name': 'Brown', 'date_of_birth': '1990-11-29', 'score': 60, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Espinoza, Burgess and Baker', 'company_number': 225298119, 'company_type': 'Limited Company', 'incorporation_date': '1998-04-02', 'liabilities': 50000.0, 'score': 60, 'opinion': 'Poor', 'turnover': 13468000.0, 'number_of_employees': 246, 'region': 'London', 'assets': 135000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.7
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Alex', 'middle_names': 'Tony', 'last_name': 'Evans', 'date_of_birth': '2006-12-25', 'amount_requested': 80000}, 'credit_report': {'first_name': 'Alex', 'middle_names': 'Tony', 'last_name': 'Evans', 'date_of_birth': '2006-12-25', 'score': 13, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 24, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'May, Zuniga and Blankenship', 'company_number': 808293790, 'company_type': 'Limited Company', 'incorporation_date': '2006-10-25', 'liabilities': 12000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 589620000.0, 'number_of_employees': 649, 'region': 'South East', 'assets': 3883000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 323.5833333333333
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 80000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ann', 'middle_names': 'Michelle', 'last_name': 'Henson', 'date_of_birth': '1983-05-18', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Ann', 'middle_names': 'Michelle', 'last_name': 'Henson', 'date_of_birth': '1983-05-18', 'score': 68, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 24, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Lewis and Sons', 'company_number': 189576278, 'company_type': 'Limited Company', 'incorporation_date': '1985-01-03', 'liabilities': 52000.0, 'score': 48, 'opinion': 'Poor', 'turnover': 1406000.0, 'number_of_employees': 201, 'region': 'East Midlands', 'assets': 53000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0192307692307692
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Julie', 'middle_names': 'Kimberly', 'last_name': 'Taylor', 'date_of_birth': '1945-01-08', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Julie', 'middle_names': 'Kimberly', 'last_name': 'Taylor', 'date_of_birth': '1945-01-08', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Gonzalez-Burnett', 'company_number': 579941119, 'company_type': 'Limited Company', 'incorporation_date': '2013-05-06', 'liabilities': 0.0, 'score': 17, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
 root - WARNING - Getting decision for ~ 
 root - WARNING - {}
 root - WARNING - Getting decision for ~ 
@@ -26,4 +367,1094 @@ root - WARNING - {}
 root - WARNING - Getting decision for ~ 
 root - WARNING - {}
 root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Lance', 'middle_names': 'Kim', 'last_name': 'Cline', 'date_of_birth': '1957-02-09', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Lance', 'middle_names': 'Kim', 'last_name': 'Cline', 'date_of_birth': '1957-02-09', 'score': 89, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Jenkins LLC', 'company_number': 756220251, 'company_type': 'Limited Company', 'incorporation_date': '1975-03-28', 'liabilities': 77000.0, 'score': 52, 'opinion': 'Poor', 'turnover': 1256000.0, 'number_of_employees': 6, 'region': 'Yorkshire and the Humber', 'assets': 215000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.792207792207792
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Katelyn', 'middle_names': 'Peter', 'last_name': 'Finley', 'date_of_birth': '1915-07-03', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Katelyn', 'middle_names': 'Peter', 'last_name': 'Finley', 'date_of_birth': '1915-07-03', 'score': 54, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Davis and Sons', 'company_number': 735573472, 'company_type': 'Limited Company', 'incorporation_date': '2016-04-21', 'liabilities': 71000.0, 'score': 69, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'London', 'assets': 86000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.2112676056338028
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kevin', 'middle_names': 'Dale', 'last_name': 'Wilson', 'date_of_birth': '1992-06-20', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Kevin', 'middle_names': 'Dale', 'last_name': 'Wilson', 'date_of_birth': '1992-06-20', 'score': 25, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 13, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Barton, Warren and Hernandez', 'company_number': 852649766, 'company_type': 'Limited Company', 'incorporation_date': '1993-03-12', 'liabilities': 276000.0, 'score': 43, 'opinion': 'Good', 'turnover': 53700000.0, 'number_of_employees': 79, 'region': 'South West', 'assets': 3666000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 13.282608695652174
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Carl', 'middle_names': 'Gregory', 'last_name': 'Richards', 'date_of_birth': '1971-09-30', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Carl', 'middle_names': 'Gregory', 'last_name': 'Richards', 'date_of_birth': '1971-09-30', 'score': 99, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Payne, Cortez and Green', 'company_number': 931338894, 'company_type': 'Limited Company', 'incorporation_date': '2001-03-27', 'liabilities': 16000.0, 'score': 92, 'opinion': 'Outstanding', 'turnover': 95001000.0, 'number_of_employees': 7035, 'region': 'North West', 'assets': 4771000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 298.1875
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Cynthia', 'middle_names': 'Jessica', 'last_name': 'Jones', 'date_of_birth': '1996-03-09', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Cynthia', 'middle_names': 'Jessica', 'last_name': 'Jones', 'date_of_birth': '1996-03-09', 'score': 94, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Banks-Williams', 'company_number': 267975766, 'company_type': 'Limited Company', 'incorporation_date': '1972-06-01', 'liabilities': 232000.0, 'score': 79, 'opinion': 'Outstanding', 'turnover': 11816000.0, 'number_of_employees': 151, 'region': 'North East', 'assets': 156000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.6724137931034483
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Diana', 'middle_names': 'Kayla', 'last_name': 'Berry', 'date_of_birth': '2017-03-29', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Diana', 'middle_names': 'Kayla', 'last_name': 'Berry', 'date_of_birth': '2017-03-29', 'score': 96, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Perez Group', 'company_number': 206306803, 'company_type': 'Limited Company', 'incorporation_date': '1979-05-11', 'liabilities': 57000.0, 'score': 44, 'opinion': 'Outstanding', 'turnover': 607000.0, 'number_of_employees': 7, 'region': 'East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brandon', 'middle_names': 'Jason', 'last_name': 'Garcia', 'date_of_birth': '1964-10-01', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Brandon', 'middle_names': 'Jason', 'last_name': 'Garcia', 'date_of_birth': '1964-10-01', 'score': 41, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Cruz, Bowman and Hall', 'company_number': 190980487, 'company_type': 'Limited Company', 'incorporation_date': '2009-06-06', 'liabilities': 47000.0, 'score': 51, 'opinion': 'Good', 'turnover': 231000.0, 'number_of_employees': 7, 'region': 'East', 'assets': 95000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.021276595744681
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Michael', 'middle_names': 'Alicia', 'last_name': 'Howard', 'date_of_birth': '1931-10-05', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Michael', 'middle_names': 'Alicia', 'last_name': 'Howard', 'date_of_birth': '1931-10-05', 'score': 96, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Vaughn, Evans and Frye', 'company_number': 520640743, 'company_type': 'Limited Company', 'incorporation_date': '1990-04-27', 'liabilities': 0.0, 'score': 36, 'opinion': 'Woeful', 'turnover': 16000.0, 'number_of_employees': 1, 'region': 'Scotland', 'assets': 31000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Michael', 'middle_names': 'Sarah', 'last_name': 'Brandt', 'date_of_birth': '1916-05-04', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Michael', 'middle_names': 'Sarah', 'last_name': 'Brandt', 'date_of_birth': '1916-05-04', 'score': 76, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Powell-Winters', 'company_number': 35157111, 'company_type': 'Limited Company', 'incorporation_date': '2006-08-20', 'liabilities': 67000.0, 'score': 39, 'opinion': 'Poor', 'turnover': 11000.0, 'number_of_employees': 1, 'region': 'South West', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.16417910447761194
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Denise', 'middle_names': 'Drew', 'last_name': 'Tanner', 'date_of_birth': '1924-05-23', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Denise', 'middle_names': 'Drew', 'last_name': 'Tanner', 'date_of_birth': '1924-05-23', 'score': 88, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Mclaughlin, Rogers and Roberts', 'company_number': 660588805, 'company_type': 'Limited Company', 'incorporation_date': '2016-08-04', 'liabilities': 43000.0, 'score': 48, 'opinion': 'Outstanding', 'turnover': 18608000.0, 'number_of_employees': 25, 'region': 'South West', 'assets': 24109000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 560.6744186046511
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kayla', 'middle_names': 'Glenda', 'last_name': 'Brown', 'date_of_birth': '1991-05-13', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Kayla', 'middle_names': 'Glenda', 'last_name': 'Brown', 'date_of_birth': '1991-05-13', 'score': 100, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 9}, 'company_report': {'company_name': 'Logan, Dyer and Cameron', 'company_number': 230642189, 'company_type': 'Limited Company', 'incorporation_date': '2007-06-10', 'liabilities': 17000.0, 'score': 18, 'opinion': 'Woeful', 'turnover': 52000.0, 'number_of_employees': 1, 'region': 'Scotland', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'William', 'middle_names': 'Howard', 'last_name': 'Russell', 'date_of_birth': '2009-06-14', 'amount_requested': 1000}, 'credit_report': {'first_name': 'William', 'middle_names': 'Howard', 'last_name': 'Russell', 'date_of_birth': '2009-06-14', 'score': 23, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 24, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Allen-Miller', 'company_number': 226738561, 'company_type': 'Limited Company', 'incorporation_date': '1976-03-29', 'liabilities': 59000.0, 'score': 53, 'opinion': 'Outstanding', 'turnover': 0.0, 'number_of_employees': 519, 'region': 'Yorkshire and the Humber', 'assets': 1824000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 30.915254237288135
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Lauren', 'middle_names': 'Christina', 'last_name': 'Avery', 'date_of_birth': '1989-10-26', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Lauren', 'middle_names': 'Christina', 'last_name': 'Avery', 'date_of_birth': '1989-10-26', 'score': 100, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Nichols Group', 'company_number': 524612254, 'company_type': 'Limited Company', 'incorporation_date': '2001-04-09', 'liabilities': 17000.0, 'score': 10, 'opinion': 'Poor', 'turnover': 10000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 27000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.588235294117647
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Thomas', 'middle_names': 'Alexis', 'last_name': 'Garcia', 'date_of_birth': '1942-05-15', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Thomas', 'middle_names': 'Alexis', 'last_name': 'Garcia', 'date_of_birth': '1942-05-15', 'score': 73, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 5, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Gomez-Moore', 'company_number': 562835210, 'company_type': 'Limited Company', 'incorporation_date': '1993-08-30', 'liabilities': 23000.0, 'score': 30, 'opinion': 'Woeful', 'turnover': 48000.0, 'number_of_employees': 1, 'region': 'West Midlands', 'assets': 79000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 3.4347826086956523
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Gina', 'middle_names': 'Christopher', 'last_name': 'Beck', 'date_of_birth': '1963-01-24', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Gina', 'middle_names': 'Christopher', 'last_name': 'Beck', 'date_of_birth': '1963-01-24', 'score': 74, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Barker and Sons', 'company_number': 938011607, 'company_type': 'Limited Company', 'incorporation_date': '1980-09-29', 'liabilities': 85000.0, 'score': 59, 'opinion': 'Woeful', 'turnover': 7282000.0, 'number_of_employees': 858, 'region': 'East', 'assets': 1133000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 13.329411764705883
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Paul', 'middle_names': 'Sherry', 'last_name': 'Ochoa', 'date_of_birth': '2000-12-09', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Paul', 'middle_names': 'Sherry', 'last_name': 'Ochoa', 'date_of_birth': '2000-12-09', 'score': 83, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Mitchell, Krause and Walker', 'company_number': 448999920, 'company_type': 'Limited Company', 'incorporation_date': '1998-05-01', 'liabilities': 0.0, 'score': 29, 'opinion': 'Good', 'turnover': 0.0, 'number_of_employees': 2, 'region': 'London', 'assets': 44000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Megan', 'middle_names': 'David', 'last_name': 'White', 'date_of_birth': '1968-02-18', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Megan', 'middle_names': 'David', 'last_name': 'White', 'date_of_birth': '1968-02-18', 'score': 74, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Watkins Group', 'company_number': 622189046, 'company_type': 'Limited Company', 'incorporation_date': '1980-12-21', 'liabilities': 45000.0, 'score': 42, 'opinion': 'Good', 'turnover': 3854000.0, 'number_of_employees': 54, 'region': 'Scotland', 'assets': 5738000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 127.5111111111111
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kimberly', 'middle_names': 'Daniel', 'last_name': 'Carlson', 'date_of_birth': '2001-04-21', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Kimberly', 'middle_names': 'Daniel', 'last_name': 'Carlson', 'date_of_birth': '2001-04-21', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Molina-Reynolds', 'company_number': 114796230, 'company_type': 'Limited Company', 'incorporation_date': '2003-11-05', 'liabilities': 51000.0, 'score': 52, 'opinion': 'Outstanding', 'turnover': 23288000.0, 'number_of_employees': 1680, 'region': 'East', 'assets': 1803000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 35.35294117647059
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kevin', 'middle_names': 'Paul', 'last_name': 'Espinoza', 'date_of_birth': '2009-10-29', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Kevin', 'middle_names': 'Paul', 'last_name': 'Espinoza', 'date_of_birth': '2009-10-29', 'score': 94, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Jones Inc', 'company_number': 310866116, 'company_type': 'Limited Company', 'incorporation_date': '1973-07-24', 'liabilities': 30000.0, 'score': 67, 'opinion': 'Poor', 'turnover': 161000.0, 'number_of_employees': 6, 'region': 'Yorkshire and the Humber', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Leonard', 'last_name': 'Harrington', 'date_of_birth': '1918-07-10', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Leonard', 'last_name': 'Harrington', 'date_of_birth': '1918-07-10', 'score': 39, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Schultz, Cox and Fox', 'company_number': 739099001, 'company_type': 'Limited Company', 'incorporation_date': '1986-11-02', 'liabilities': 0.0, 'score': 71, 'opinion': 'Good', 'turnover': 415000.0, 'number_of_employees': 84, 'region': 'Scotland', 'assets': 56000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ashley', 'middle_names': 'Steven', 'last_name': 'Pierce', 'date_of_birth': '1948-07-17', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Ashley', 'middle_names': 'Steven', 'last_name': 'Pierce', 'date_of_birth': '1948-07-17', 'score': 29, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Boyd, Kelly and Lane', 'company_number': 7423122, 'company_type': 'Limited Company', 'incorporation_date': '2006-05-31', 'liabilities': 16000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 635606000.0, 'number_of_employees': 15028, 'region': 'South West', 'assets': 124337000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 7771.0625
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'David', 'middle_names': 'Holly', 'last_name': 'Hughes', 'date_of_birth': '1941-10-14', 'amount_requested': 4000}, 'credit_report': {'first_name': 'David', 'middle_names': 'Holly', 'last_name': 'Hughes', 'date_of_birth': '1941-10-14', 'score': 71, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Perry PLC', 'company_number': 333499247, 'company_type': 'Limited Company', 'incorporation_date': '1974-12-13', 'liabilities': 141000.0, 'score': 56, 'opinion': 'Poor', 'turnover': 85562000.0, 'number_of_employees': 1867, 'region': 'Northern Ireland', 'assets': 16433000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 116.54609929078015
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 1000.0, b2c810978ec74d85b661de7bb50cedde
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 229
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': 'b2c810978ec74d85b661de7bb50cedde', 'amount': 1000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Denise', 'middle_names': 'Mary', 'last_name': 'Johnston', 'date_of_birth': '1903-05-27', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Denise', 'middle_names': 'Mary', 'last_name': 'Johnston', 'date_of_birth': '1903-05-27', 'score': 90, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Carter-Young', 'company_number': 734744246, 'company_type': 'Limited Company', 'incorporation_date': '1987-03-07', 'liabilities': 24000.0, 'score': 16, 'opinion': 'Good', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 73000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 3.0416666666666665
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Lucas', 'middle_names': 'Brendan', 'last_name': 'Griffin', 'date_of_birth': '1959-07-29', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Lucas', 'middle_names': 'Brendan', 'last_name': 'Griffin', 'date_of_birth': '1959-07-29', 'score': 93, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Osborn Inc', 'company_number': 154138500, 'company_type': 'Limited Company', 'incorporation_date': '2000-08-04', 'liabilities': 33000.0, 'score': 36, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'North East', 'assets': 21000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.6363636363636364
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Megan', 'middle_names': 'Joseph', 'last_name': 'Robles', 'date_of_birth': '2009-02-25', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Megan', 'middle_names': 'Joseph', 'last_name': 'Robles', 'date_of_birth': '2009-02-25', 'score': 19, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Parker Group', 'company_number': 632103297, 'company_type': 'Limited Company', 'incorporation_date': '1993-04-06', 'liabilities': 96000.0, 'score': 59, 'opinion': 'Woeful', 'turnover': 3616000.0, 'number_of_employees': 21, 'region': 'South West', 'assets': 4404000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 45.875
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Barbara', 'middle_names': 'Robert', 'last_name': 'Sullivan', 'date_of_birth': '1907-12-18', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Barbara', 'middle_names': 'Robert', 'last_name': 'Sullivan', 'date_of_birth': '1907-12-18', 'score': 89, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Jones and Sons', 'company_number': 864366412, 'company_type': 'Limited Company', 'incorporation_date': '1972-10-01', 'liabilities': 78000.0, 'score': 32, 'opinion': 'Outstanding', 'turnover': 61000.0, 'number_of_employees': 2, 'region': 'North East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Katelyn', 'last_name': 'Henry', 'date_of_birth': '1906-02-22', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Katelyn', 'last_name': 'Henry', 'date_of_birth': '1906-02-22', 'score': 57, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 26, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Ford Group', 'company_number': 96864208, 'company_type': 'Limited Company', 'incorporation_date': '1974-11-06', 'liabilities': 0.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 39825000.0, 'number_of_employees': 212, 'region': 'London', 'assets': 34815000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 15000.0, f34c71d0e9bd45179a5b18702515da2f
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 230
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': 'f34c71d0e9bd45179a5b18702515da2f', 'amount': 15000.0}, response <Response [200]>
+flask.app - INFO - Sending Transaction: 20000.0, 95a983c4d4894bb8994b481a986ca3e2
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 230
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': '95a983c4d4894bb8994b481a986ca3e2', 'amount': 20000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Tony', 'middle_names': 'Shawn', 'last_name': 'Marshall', 'date_of_birth': '1925-07-10', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Tony', 'middle_names': 'Shawn', 'last_name': 'Marshall', 'date_of_birth': '1925-07-10', 'score': 99, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 2, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Hess-Allen', 'company_number': 250590477, 'company_type': 'Limited Company', 'incorporation_date': '1993-11-23', 'liabilities': 96000.0, 'score': 1, 'opinion': 'Poor', 'turnover': 29000.0, 'number_of_employees': 1, 'region': 'South West', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.11458333333333333
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mitchell', 'middle_names': 'William', 'last_name': 'Hatfield', 'date_of_birth': '1950-05-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Mitchell', 'middle_names': 'William', 'last_name': 'Hatfield', 'date_of_birth': '1950-05-02', 'score': 95, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 5, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Rivera-Rhodes', 'company_number': 632947511, 'company_type': 'Limited Company', 'incorporation_date': '2007-03-01', 'liabilities': 165000.0, 'score': 46, 'opinion': 'Poor', 'turnover': 1095000.0, 'number_of_employees': 10, 'region': 'Yorkshire and the Humber', 'assets': 41000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.24848484848484848
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Natasha', 'middle_names': 'Ashley', 'last_name': 'Wright', 'date_of_birth': '1904-01-18', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Natasha', 'middle_names': 'Ashley', 'last_name': 'Wright', 'date_of_birth': '1904-01-18', 'score': 56, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Smith-Jordan', 'company_number': 940691999, 'company_type': 'Limited Company', 'incorporation_date': '1975-12-10', 'liabilities': 66000.0, 'score': 89, 'opinion': 'Good', 'turnover': 147895000.0, 'number_of_employees': 1024, 'region': 'East', 'assets': 37758000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 572.0909090909091
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kelly', 'middle_names': 'Pamela', 'last_name': 'Werner', 'date_of_birth': '1947-04-22', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Kelly', 'middle_names': 'Pamela', 'last_name': 'Werner', 'date_of_birth': '1947-04-22', 'score': 76, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hansen PLC', 'company_number': 686178560, 'company_type': 'Limited Company', 'incorporation_date': '2018-01-30', 'liabilities': 0.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 12087000.0, 'number_of_employees': 37, 'region': 'South East', 'assets': 19329000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Troy', 'middle_names': 'Beth', 'last_name': 'Cannon', 'date_of_birth': '1904-07-08', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Troy', 'middle_names': 'Beth', 'last_name': 'Cannon', 'date_of_birth': '1904-07-08', 'score': 74, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 14, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Rodriguez and Sons', 'company_number': 784149671, 'company_type': 'Limited Company', 'incorporation_date': '2000-07-05', 'liabilities': 49000.0, 'score': 64, 'opinion': 'Good', 'turnover': 1059711000.0, 'number_of_employees': 182, 'region': 'West Midlands', 'assets': 6200000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 126.53061224489795
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Roberto', 'middle_names': 'Gary', 'last_name': 'White', 'date_of_birth': '1955-08-01', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Roberto', 'middle_names': 'Gary', 'last_name': 'White', 'date_of_birth': '1955-08-01', 'score': 83, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Powell-Campbell', 'company_number': 345353214, 'company_type': 'Limited Company', 'incorporation_date': '1982-05-10', 'liabilities': 251000.0, 'score': 45, 'opinion': 'Woeful', 'turnover': 197596000.0, 'number_of_employees': 44, 'region': 'South West', 'assets': 5856000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 23.330677290836654
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kayla', 'middle_names': 'Anne', 'last_name': 'Fuller', 'date_of_birth': '2008-02-02', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Kayla', 'middle_names': 'Anne', 'last_name': 'Fuller', 'date_of_birth': '2008-02-02', 'score': 28, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Walker-Fisher', 'company_number': 273024587, 'company_type': 'Limited Company', 'incorporation_date': '2010-11-11', 'liabilities': 12000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 52075000.0, 'number_of_employees': 169, 'region': 'North East', 'assets': 2387000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 198.91666666666666
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jerome', 'middle_names': 'Sean', 'last_name': 'Fox', 'date_of_birth': '1964-10-21', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Jerome', 'middle_names': 'Sean', 'last_name': 'Fox', 'date_of_birth': '1964-10-21', 'score': 37, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Cooley PLC', 'company_number': 944580580, 'company_type': 'Limited Company', 'incorporation_date': '2012-09-28', 'liabilities': 116000.0, 'score': 51, 'opinion': 'Woeful', 'turnover': 4257000.0, 'number_of_employees': 67, 'region': 'Northern Ireland', 'assets': 613000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 5.2844827586206895
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jenna', 'middle_names': 'David', 'last_name': 'Blake', 'date_of_birth': '2011-07-10', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Jenna', 'middle_names': 'David', 'last_name': 'Blake', 'date_of_birth': '2011-07-10', 'score': 79, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Sanders-Hendrix', 'company_number': 942681315, 'company_type': 'Limited Company', 'incorporation_date': '1994-06-15', 'liabilities': 0.0, 'score': 67, 'opinion': 'Outstanding', 'turnover': 290000.0, 'number_of_employees': 26, 'region': 'East', 'assets': 87000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Aaron', 'middle_names': 'Kristie', 'last_name': 'Saunders', 'date_of_birth': '1957-06-14', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Aaron', 'middle_names': 'Kristie', 'last_name': 'Saunders', 'date_of_birth': '1957-06-14', 'score': 80, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Harris Ltd', 'company_number': 355269028, 'company_type': 'Limited Company', 'incorporation_date': '2006-01-01', 'liabilities': 0.0, 'score': 45, 'opinion': 'Good', 'turnover': 65000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 38000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Eric', 'middle_names': 'Stacy', 'last_name': 'Stewart', 'date_of_birth': '1919-12-22', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Eric', 'middle_names': 'Stacy', 'last_name': 'Stewart', 'date_of_birth': '1919-12-22', 'score': 95, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 1, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Thompson, Bowman and Miller', 'company_number': 941797022, 'company_type': 'Limited Company', 'incorporation_date': '2014-10-11', 'liabilities': 28000.0, 'score': 4, 'opinion': 'Woeful', 'turnover': 66000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jill', 'middle_names': 'Glenda', 'last_name': 'Burton', 'date_of_birth': '1922-06-15', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Jill', 'middle_names': 'Glenda', 'last_name': 'Burton', 'date_of_birth': '1922-06-15', 'score': 99, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Chan-Johnson', 'company_number': 807649883, 'company_type': 'Limited Company', 'incorporation_date': '2009-04-13', 'liabilities': 42000.0, 'score': 35, 'opinion': 'Good', 'turnover': 24000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 32000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7619047619047619
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mary', 'middle_names': 'Brandon', 'last_name': 'Daniels', 'date_of_birth': '1970-05-24', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Mary', 'middle_names': 'Brandon', 'last_name': 'Daniels', 'date_of_birth': '1970-05-24', 'score': 9, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'King Inc', 'company_number': 748075838, 'company_type': 'Limited Company', 'incorporation_date': '1991-12-25', 'liabilities': 62000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 14510000.0, 'number_of_employees': 116, 'region': 'West Midlands', 'assets': 148945000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2402.3387096774195
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Angela', 'middle_names': 'Stephen', 'last_name': 'Lawrence', 'date_of_birth': '1991-08-09', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Angela', 'middle_names': 'Stephen', 'last_name': 'Lawrence', 'date_of_birth': '1991-08-09', 'score': 99, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 2, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Thomas-Wood', 'company_number': 615627724, 'company_type': 'Limited Company', 'incorporation_date': '1998-09-14', 'liabilities': 29000.0, 'score': 60, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 3, 'region': 'East', 'assets': 133000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 4.586206896551724
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Nicole', 'middle_names': 'Darryl', 'last_name': 'Brown', 'date_of_birth': '1940-03-10', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Nicole', 'middle_names': 'Darryl', 'last_name': 'Brown', 'date_of_birth': '1940-03-10', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Olson, Daniels and Turner', 'company_number': 787821409, 'company_type': 'Limited Company', 'incorporation_date': '1976-06-06', 'liabilities': 34000.0, 'score': 33, 'opinion': 'Woeful', 'turnover': 23000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 26000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7647058823529411
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kevin', 'middle_names': 'Hunter', 'last_name': 'Monroe', 'date_of_birth': '1946-04-14', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Kevin', 'middle_names': 'Hunter', 'last_name': 'Monroe', 'date_of_birth': '1946-04-14', 'score': 90, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Nguyen, Parker and Schmitt', 'company_number': 641665108, 'company_type': 'Limited Company', 'incorporation_date': '2016-11-27', 'liabilities': 0.0, 'score': 49, 'opinion': 'Poor', 'turnover': 184000.0, 'number_of_employees': 2, 'region': 'North East', 'assets': 112000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Alexander', 'middle_names': 'Joseph', 'last_name': 'Murray', 'date_of_birth': '1964-11-09', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Alexander', 'middle_names': 'Joseph', 'last_name': 'Murray', 'date_of_birth': '1964-11-09', 'score': 10, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Carter-Hutchinson', 'company_number': 221418898, 'company_type': 'Limited Company', 'incorporation_date': '1989-10-06', 'liabilities': 44000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 97418000.0, 'number_of_employees': 198, 'region': 'London', 'assets': 7517000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 170.8409090909091
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 2000.0, 713c39a303ca4d879b78215c3ce8fbef
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 229
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': '713c39a303ca4d879b78215c3ce8fbef', 'amount': 2000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mark', 'middle_names': 'Angela', 'last_name': 'Jackson', 'date_of_birth': '1953-10-16', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Mark', 'middle_names': 'Angela', 'last_name': 'Jackson', 'date_of_birth': '1953-10-16', 'score': 74, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hayes-Edwards', 'company_number': 298045028, 'company_type': 'Limited Company', 'incorporation_date': '2008-07-02', 'liabilities': 0.0, 'score': 72, 'opinion': 'Poor', 'turnover': 77075000.0, 'number_of_employees': 157, 'region': 'London', 'assets': 78387000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 10000.0, c3c25aacba0b4a40b3a2dc2a6fd36e00
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 230
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': 'c3c25aacba0b4a40b3a2dc2a6fd36e00', 'amount': 10000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'score': 74, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Le, Joseph and Ryan', 'company_number': 165077028, 'company_type': 'Limited Company', 'incorporation_date': '2016-03-31', 'liabilities': 14000.0, 'score': 29, 'opinion': 'Woeful', 'turnover': 40000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 14000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Elizabeth', 'middle_names': 'Sharon', 'last_name': 'Russell', 'date_of_birth': '1953-06-05', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Elizabeth', 'middle_names': 'Sharon', 'last_name': 'Russell', 'date_of_birth': '1953-06-05', 'score': 85, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 4, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Jordan PLC', 'company_number': 521475385, 'company_type': 'Limited Company', 'incorporation_date': '1992-02-05', 'liabilities': 0.0, 'score': 29, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'North East', 'assets': 45000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Valerie', 'middle_names': 'David', 'last_name': 'Garcia', 'date_of_birth': '1990-06-20', 'amount_requested': 60000}, 'credit_report': {'first_name': 'Valerie', 'middle_names': 'David', 'last_name': 'Garcia', 'date_of_birth': '1990-06-20', 'score': 83, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Juarez, Johnston and Griffin', 'company_number': 7197514, 'company_type': 'Limited Company', 'incorporation_date': '1978-12-23', 'liabilities': 127000.0, 'score': 58, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 4, 'region': 'North West', 'assets': 38000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.2992125984251969
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Tammy', 'middle_names': 'Eugene', 'last_name': 'Henry', 'date_of_birth': '1928-08-16', 'amount_requested': 80000}, 'credit_report': {'first_name': 'Tammy', 'middle_names': 'Eugene', 'last_name': 'Henry', 'date_of_birth': '1928-08-16', 'score': 91, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Hayes Ltd', 'company_number': 436069571, 'company_type': 'Limited Company', 'incorporation_date': '2018-11-17', 'liabilities': 0.0, 'score': 46, 'opinion': 'Poor', 'turnover': 1621000.0, 'number_of_employees': 37, 'region': 'North West', 'assets': 443000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 80000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Madison', 'middle_names': 'Carol', 'last_name': 'Scott', 'date_of_birth': '2005-01-07', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Madison', 'middle_names': 'Carol', 'last_name': 'Scott', 'date_of_birth': '2005-01-07', 'score': 90, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Fischer-Allen', 'company_number': 70602622, 'company_type': 'Limited Company', 'incorporation_date': '1983-07-06', 'liabilities': 0.0, 'score': 34, 'opinion': 'Outstanding', 'turnover': 10004000.0, 'number_of_employees': 41, 'region': 'South East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Amy', 'middle_names': 'Amy', 'last_name': 'Kim', 'date_of_birth': '1995-04-05', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Amy', 'middle_names': 'Amy', 'last_name': 'Kim', 'date_of_birth': '1995-04-05', 'score': 92, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Moreno, Maldonado and Stephens', 'company_number': 303237386, 'company_type': 'Limited Company', 'incorporation_date': '2000-09-02', 'liabilities': 25000.0, 'score': 62, 'opinion': 'Outstanding', 'turnover': 98423000.0, 'number_of_employees': 172, 'region': 'London', 'assets': 1788000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 71.52
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Vincent', 'middle_names': 'Shannon', 'last_name': 'Roberson', 'date_of_birth': '1987-02-21', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Vincent', 'middle_names': 'Shannon', 'last_name': 'Roberson', 'date_of_birth': '1987-02-21', 'score': 86, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Howard-Marquez', 'company_number': 164183050, 'company_type': 'Limited Company', 'incorporation_date': '1999-12-10', 'liabilities': 36000.0, 'score': 7, 'opinion': 'Woeful', 'turnover': 15000.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 94000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.611111111111111
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Maureen', 'middle_names': 'Jordan', 'last_name': 'Murphy', 'date_of_birth': '1996-11-01', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Maureen', 'middle_names': 'Jordan', 'last_name': 'Murphy', 'date_of_birth': '1996-11-01', 'score': 92, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Davis-Whitehead', 'company_number': 906176197, 'company_type': 'Limited Company', 'incorporation_date': '1989-07-08', 'liabilities': 56000.0, 'score': 10, 'opinion': 'Good', 'turnover': 25000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.19642857142857142
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Gary', 'middle_names': 'Marie', 'last_name': 'Moore', 'date_of_birth': '1939-05-31', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Gary', 'middle_names': 'Marie', 'last_name': 'Moore', 'date_of_birth': '1939-05-31', 'score': 98, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Shaw-Zavala', 'company_number': 755358357, 'company_type': 'Limited Company', 'incorporation_date': '1996-08-01', 'liabilities': 36000.0, 'score': 46, 'opinion': 'Good', 'turnover': 4199000.0, 'number_of_employees': 37, 'region': 'London', 'assets': 50000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.3888888888888888
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Glenn', 'middle_names': 'Shannon', 'last_name': 'Wolfe', 'date_of_birth': '1969-04-13', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Glenn', 'middle_names': 'Shannon', 'last_name': 'Wolfe', 'date_of_birth': '1969-04-13', 'score': 49, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Lewis-Silva', 'company_number': 369923809, 'company_type': 'Limited Company', 'incorporation_date': '2010-12-20', 'liabilities': 218000.0, 'score': 55, 'opinion': 'Good', 'turnover': 26906000.0, 'number_of_employees': 35, 'region': 'Yorkshire and the Humber', 'assets': 3874000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 17.770642201834864
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Bianca', 'middle_names': 'Christina', 'last_name': 'Sanders', 'date_of_birth': '1938-06-22', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Bianca', 'middle_names': 'Christina', 'last_name': 'Sanders', 'date_of_birth': '1938-06-22', 'score': 95, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Hood, Jarvis and Osborne', 'company_number': 116293775, 'company_type': 'Limited Company', 'incorporation_date': '1972-06-26', 'liabilities': 95000.0, 'score': 22, 'opinion': 'Good', 'turnover': 17000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 16000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.16842105263157894
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Willie', 'middle_names': 'Ashley', 'last_name': 'Sullivan', 'date_of_birth': '1983-01-15', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Willie', 'middle_names': 'Ashley', 'last_name': 'Sullivan', 'date_of_birth': '1983-01-15', 'score': 81, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Ramos, Cummings and Andersen', 'company_number': 606775210, 'company_type': 'Limited Company', 'incorporation_date': '1977-04-25', 'liabilities': 113000.0, 'score': 21, 'opinion': 'Outstanding', 'turnover': 31000.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'John', 'middle_names': 'Sandra', 'last_name': 'Collins', 'date_of_birth': '1987-07-11', 'amount_requested': 40000}, 'credit_report': {'first_name': 'John', 'middle_names': 'Sandra', 'last_name': 'Collins', 'date_of_birth': '1987-07-11', 'score': 72, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Morgan-Gibson', 'company_number': 631228196, 'company_type': 'Limited Company', 'incorporation_date': '2014-01-03', 'liabilities': 21000.0, 'score': 31, 'opinion': 'Woeful', 'turnover': 101000.0, 'number_of_employees': 4, 'region': 'East Midlands', 'assets': 28000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.3333333333333333
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kelly', 'middle_names': 'Shelly', 'last_name': 'Guerrero', 'date_of_birth': '1957-01-22', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Kelly', 'middle_names': 'Shelly', 'last_name': 'Guerrero', 'date_of_birth': '1957-01-22', 'score': 82, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Warren, Davis and Bird', 'company_number': 660645155, 'company_type': 'Limited Company', 'incorporation_date': '1980-12-15', 'liabilities': 19000.0, 'score': 27, 'opinion': 'Poor', 'turnover': 28000.0, 'number_of_employees': 1, 'region': 'West Midlands', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Joshua', 'middle_names': 'Connor', 'last_name': 'Pena', 'date_of_birth': '2012-08-23', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Joshua', 'middle_names': 'Connor', 'last_name': 'Pena', 'date_of_birth': '2012-08-23', 'score': 72, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Padilla PLC', 'company_number': 451781926, 'company_type': 'Limited Company', 'incorporation_date': '1994-07-24', 'liabilities': 23000.0, 'score': 17, 'opinion': 'Poor', 'turnover': 54000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.4782608695652174
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jasmine', 'middle_names': 'Michele', 'last_name': 'Buck', 'date_of_birth': '1938-05-04', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Jasmine', 'middle_names': 'Michele', 'last_name': 'Buck', 'date_of_birth': '1938-05-04', 'score': 59, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Roth, Patterson and Carson', 'company_number': 933432040, 'company_type': 'Limited Company', 'incorporation_date': '2002-10-04', 'liabilities': 27000.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 429218000.0, 'number_of_employees': 4962, 'region': 'Scotland', 'assets': 4745000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 175.74074074074073
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Carla', 'middle_names': 'Martha', 'last_name': 'May', 'date_of_birth': '1910-11-24', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Carla', 'middle_names': 'Martha', 'last_name': 'May', 'date_of_birth': '1910-11-24', 'score': 86, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Peterson, Richards and Smith', 'company_number': 600044242, 'company_type': 'Limited Company', 'incorporation_date': '1984-05-12', 'liabilities': 1634000.0, 'score': 68, 'opinion': 'Poor', 'turnover': 1822000.0, 'number_of_employees': 21, 'region': 'North West', 'assets': 251000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.1536107711138311
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jeremiah', 'middle_names': 'Mary', 'last_name': 'Cruz', 'date_of_birth': '1946-11-24', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Jeremiah', 'middle_names': 'Mary', 'last_name': 'Cruz', 'date_of_birth': '1946-11-24', 'score': 54, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Fernandez-Patterson', 'company_number': 900033660, 'company_type': 'Limited Company', 'incorporation_date': '1989-06-06', 'liabilities': 35000.0, 'score': 61, 'opinion': 'Outstanding', 'turnover': 1868000.0, 'number_of_employees': 350, 'region': 'East Midlands', 'assets': 861000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 24.6
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Bruce', 'middle_names': 'Thomas', 'last_name': 'Evans', 'date_of_birth': '1919-08-28', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Bruce', 'middle_names': 'Thomas', 'last_name': 'Evans', 'date_of_birth': '1919-08-28', 'score': 99, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Collins-Lee', 'company_number': 595262407, 'company_type': 'Limited Company', 'incorporation_date': '2004-05-21', 'liabilities': 134000.0, 'score': 86, 'opinion': 'Poor', 'turnover': 131512000.0, 'number_of_employees': 96, 'region': 'Yorkshire and the Humber', 'assets': 118000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.8805970149253731
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Denise', 'middle_names': 'Alexis', 'last_name': 'Reynolds', 'date_of_birth': '1915-12-29', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Denise', 'middle_names': 'Alexis', 'last_name': 'Reynolds', 'date_of_birth': '1915-12-29', 'score': 21, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 29, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hill and Sons', 'company_number': 468521876, 'company_type': 'Limited Company', 'incorporation_date': '1982-01-13', 'liabilities': 13000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 52072000.0, 'number_of_employees': 385, 'region': 'East Midlands', 'assets': 7997000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 615.1538461538462
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+flask.app - INFO - Sending Transaction: 10000.0, 8df74cd0551847619d6d8c9bfa1d9f01
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 230
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': '8df74cd0551847619d6d8c9bfa1d9f01', 'amount': 10000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mark', 'middle_names': 'Jessica', 'last_name': 'Davis', 'date_of_birth': '1976-03-22', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Mark', 'middle_names': 'Jessica', 'last_name': 'Davis', 'date_of_birth': '1976-03-22', 'score': 99, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 14, 'missed_payments_last_12m': 8}, 'company_report': {'company_name': 'Hughes, Morgan and Hoover', 'company_number': 71745212, 'company_type': 'Limited Company', 'incorporation_date': '1975-01-18', 'liabilities': 157000.0, 'score': 77, 'opinion': 'Good', 'turnover': 8519000.0, 'number_of_employees': 116, 'region': 'Wales', 'assets': 377000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.4012738853503186
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Zachary', 'middle_names': 'Grant', 'last_name': 'Lewis', 'date_of_birth': '1917-05-31', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Zachary', 'middle_names': 'Grant', 'last_name': 'Lewis', 'date_of_birth': '1917-05-31', 'score': 43, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 25, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Cline, Gonzalez and Stone', 'company_number': 121961520, 'company_type': 'Limited Company', 'incorporation_date': '2000-08-03', 'liabilities': 65000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 15633000.0, 'number_of_employees': 59, 'region': 'North West', 'assets': 4998000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 76.8923076923077
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Chad', 'middle_names': 'Jeffrey', 'last_name': 'Jordan', 'date_of_birth': '1946-04-27', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Chad', 'middle_names': 'Jeffrey', 'last_name': 'Jordan', 'date_of_birth': '1946-04-27', 'score': 96, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 6}, 'company_report': {'company_name': 'Hernandez, Carroll and Brown', 'company_number': 630889949, 'company_type': 'Limited Company', 'incorporation_date': '1995-10-31', 'liabilities': 10000.0, 'score': 10, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 23000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.3
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Sonya', 'middle_names': 'Melissa', 'last_name': 'Moore', 'date_of_birth': '1993-02-27', 'amount_requested': 80000}, 'credit_report': {'first_name': 'Sonya', 'middle_names': 'Melissa', 'last_name': 'Moore', 'date_of_birth': '1993-02-27', 'score': 82, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 17, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Melton-Farrell', 'company_number': 190871670, 'company_type': 'Limited Company', 'incorporation_date': '2017-02-20', 'liabilities': 22000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 627798000.0, 'number_of_employees': 70, 'region': 'London', 'assets': 58983000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2681.0454545454545
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 80000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Dawn', 'middle_names': 'Barbara', 'last_name': 'Garcia', 'date_of_birth': '1975-11-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Dawn', 'middle_names': 'Barbara', 'last_name': 'Garcia', 'date_of_birth': '1975-11-02', 'score': 36, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Carter-Warren', 'company_number': 174855433, 'company_type': 'Limited Company', 'incorporation_date': '1977-03-07', 'liabilities': 42000.0, 'score': 41, 'opinion': 'Good', 'turnover': 87000.0, 'number_of_employees': 2, 'region': 'Wales', 'assets': 28000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.6666666666666666
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Angela', 'middle_names': 'Emma', 'last_name': 'Edwards', 'date_of_birth': '1942-09-24', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Angela', 'middle_names': 'Emma', 'last_name': 'Edwards', 'date_of_birth': '1942-09-24', 'score': 96, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 24, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Cobb, Weber and Keller', 'company_number': 749265691, 'company_type': 'Limited Company', 'incorporation_date': '1993-08-30', 'liabilities': 0.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 169516000.0, 'number_of_employees': 161, 'region': 'Scotland', 'assets': 6030000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Gregory', 'middle_names': 'Tamara', 'last_name': 'Owen', 'date_of_birth': '1973-11-24', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Gregory', 'middle_names': 'Tamara', 'last_name': 'Owen', 'date_of_birth': '1973-11-24', 'score': 55, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Collins-Stokes', 'company_number': 933127500, 'company_type': 'Limited Company', 'incorporation_date': '2011-04-16', 'liabilities': 133000.0, 'score': 14, 'opinion': 'Good', 'turnover': 68000.0, 'number_of_employees': 6, 'region': 'West Midlands', 'assets': 12000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.09022556390977443
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Edward', 'middle_names': 'David', 'last_name': 'Peters', 'date_of_birth': '1984-01-04', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Edward', 'middle_names': 'David', 'last_name': 'Peters', 'date_of_birth': '1984-01-04', 'score': 78, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Riley Inc', 'company_number': 427684816, 'company_type': 'Limited Company', 'incorporation_date': '1976-06-12', 'liabilities': 60000.0, 'score': 21, 'opinion': 'Poor', 'turnover': 2573000.0, 'number_of_employees': 33, 'region': 'South West', 'assets': 75000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.25
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ricky', 'middle_names': 'Allison', 'last_name': 'Black', 'date_of_birth': '1942-12-18', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Ricky', 'middle_names': 'Allison', 'last_name': 'Black', 'date_of_birth': '1942-12-18', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 7}, 'company_report': {'company_name': 'Hurley and Sons', 'company_number': 68292457, 'company_type': 'Limited Company', 'incorporation_date': '1974-05-19', 'liabilities': 83000.0, 'score': 72, 'opinion': 'Poor', 'turnover': 7626000.0, 'number_of_employees': 814, 'region': 'Scotland', 'assets': 84000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0120481927710843
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brian', 'middle_names': 'Ashley', 'last_name': 'Cantrell', 'date_of_birth': '1994-06-13', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Brian', 'middle_names': 'Ashley', 'last_name': 'Cantrell', 'date_of_birth': '1994-06-13', 'score': 100, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Moore Ltd', 'company_number': 572499540, 'company_type': 'Limited Company', 'incorporation_date': '1983-10-01', 'liabilities': 22000.0, 'score': 1, 'opinion': 'Good', 'turnover': 12000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.5
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Joshua', 'middle_names': 'Sarah', 'last_name': 'Garcia', 'date_of_birth': '1981-05-05', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Joshua', 'middle_names': 'Sarah', 'last_name': 'Garcia', 'date_of_birth': '1981-05-05', 'score': 66, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Werner, Harvey and Lopez', 'company_number': 449942311, 'company_type': 'Limited Company', 'incorporation_date': '1998-03-10', 'liabilities': 28000.0, 'score': 32, 'opinion': 'Woeful', 'turnover': 42000.0, 'number_of_employees': 1, 'region': 'West Midlands', 'assets': 81000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.892857142857143
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Carl', 'middle_names': 'Gregory', 'last_name': 'Richards', 'date_of_birth': '1971-09-30', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Carl', 'middle_names': 'Gregory', 'last_name': 'Richards', 'date_of_birth': '1971-09-30', 'score': 99, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Payne, Cortez and Green', 'company_number': 931338894, 'company_type': 'Limited Company', 'incorporation_date': '2001-03-27', 'liabilities': 16000.0, 'score': 92, 'opinion': 'Outstanding', 'turnover': 95001000.0, 'number_of_employees': 7035, 'region': 'North West', 'assets': 4771000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 298.1875
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Andrew', 'middle_names': 'Antonio', 'last_name': 'Brooks', 'date_of_birth': '1924-01-23', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Andrew', 'middle_names': 'Antonio', 'last_name': 'Brooks', 'date_of_birth': '1924-01-23', 'score': 51, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Woods Group', 'company_number': 809696661, 'company_type': 'Limited Company', 'incorporation_date': '1991-02-04', 'liabilities': 54000.0, 'score': 11, 'opinion': 'Poor', 'turnover': 20000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 32000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.5925925925925926
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Joshua', 'middle_names': 'Jack', 'last_name': 'Hobbs', 'date_of_birth': '1948-11-16', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Joshua', 'middle_names': 'Jack', 'last_name': 'Hobbs', 'date_of_birth': '1948-11-16', 'score': 76, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Sanchez Inc', 'company_number': 158334115, 'company_type': 'Limited Company', 'incorporation_date': '1972-11-04', 'liabilities': 84000.0, 'score': 47, 'opinion': 'Poor', 'turnover': 1464000.0, 'number_of_employees': 30, 'region': 'South West', 'assets': 105000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.25
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jeffrey', 'middle_names': 'Michael', 'last_name': 'Hill', 'date_of_birth': '1999-12-19', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Jeffrey', 'middle_names': 'Michael', 'last_name': 'Hill', 'date_of_birth': '1999-12-19', 'score': 67, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Pittman PLC', 'company_number': 774214294, 'company_type': 'Limited Company', 'incorporation_date': '2001-06-14', 'liabilities': 68000.0, 'score': 61, 'opinion': 'Woeful', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 84000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.2352941176470589
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Megan', 'middle_names': 'David', 'last_name': 'White', 'date_of_birth': '1968-02-18', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Megan', 'middle_names': 'David', 'last_name': 'White', 'date_of_birth': '1968-02-18', 'score': 74, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Watkins Group', 'company_number': 622189046, 'company_type': 'Limited Company', 'incorporation_date': '1980-12-21', 'liabilities': 45000.0, 'score': 42, 'opinion': 'Good', 'turnover': 3854000.0, 'number_of_employees': 54, 'region': 'Scotland', 'assets': 5738000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 127.5111111111111
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Patricia', 'middle_names': 'Alexis', 'last_name': 'Jones', 'date_of_birth': '1923-06-29', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Patricia', 'middle_names': 'Alexis', 'last_name': 'Jones', 'date_of_birth': '1923-06-29', 'score': 55, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Larsen-Robinson', 'company_number': 858259459, 'company_type': 'Limited Company', 'incorporation_date': '1990-07-28', 'liabilities': 62000.0, 'score': 32, 'opinion': 'Good', 'turnover': 3611000.0, 'number_of_employees': 10, 'region': 'North West', 'assets': 265000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 4.274193548387097
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 3000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Connie', 'middle_names': 'Ernest', 'last_name': 'Brown', 'date_of_birth': '1924-10-10', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Connie', 'middle_names': 'Ernest', 'last_name': 'Brown', 'date_of_birth': '1924-10-10', 'score': 100, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 18, 'missed_payments_last_12m': 6}, 'company_report': {'company_name': 'Franklin, Harris and Ward', 'company_number': 73350141, 'company_type': 'Limited Company', 'incorporation_date': '1999-01-04', 'liabilities': 93000.0, 'score': 33, 'opinion': 'Poor', 'turnover': 20000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 42000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.45161290322580644
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+flask.app - INFO - Sending Transaction: 2000.0, 986acba455fd4190abc2682a162a3d95
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 10.78.180.244
+urllib3.connectionpool - DEBUG - https://10.78.180.244:5000 "POST /transaction HTTP/1.1" 200 229
+root - WARNING - transaction: request {'account': '977511dc-13a0-4eb4-a412-d8836473f3d4', 'account_to': '986acba455fd4190abc2682a162a3d95', 'amount': 2000.0}, response <Response [200]>
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Caroline', 'middle_names': 'Kristen', 'last_name': 'Jones', 'date_of_birth': '1974-08-25', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Caroline', 'middle_names': 'Kristen', 'last_name': 'Jones', 'date_of_birth': '1974-08-25', 'score': 24, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 29, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Byrd, Coleman and Lawrence', 'company_number': 830235405, 'company_type': 'Limited Company', 'incorporation_date': '1981-04-23', 'liabilities': 21000.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 12991000.0, 'number_of_employees': 5600, 'region': 'West Midlands', 'assets': 11556000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 550.2857142857143
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Anna', 'middle_names': 'Laura', 'last_name': 'Moses', 'date_of_birth': '1933-09-08', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Anna', 'middle_names': 'Laura', 'last_name': 'Moses', 'date_of_birth': '1933-09-08', 'score': 42, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Barron Ltd', 'company_number': 321180199, 'company_type': 'Limited Company', 'incorporation_date': '2008-09-26', 'liabilities': 60000.0, 'score': 79, 'opinion': 'Good', 'turnover': 63913000.0, 'number_of_employees': 2816, 'region': 'East', 'assets': 757000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 12.616666666666667
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Karen', 'middle_names': 'Robert', 'last_name': 'Miles', 'date_of_birth': '1996-02-13', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Karen', 'middle_names': 'Robert', 'last_name': 'Miles', 'date_of_birth': '1996-02-13', 'score': 18, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Mcdaniel LLC', 'company_number': 61013300, 'company_type': 'Limited Company', 'incorporation_date': '1979-11-21', 'liabilities': 0.0, 'score': 54, 'opinion': 'Outstanding', 'turnover': 936846000.0, 'number_of_employees': 15501, 'region': 'Yorkshire and the Humber', 'assets': 14526000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Michael', 'middle_names': 'Lisa', 'last_name': 'Allen', 'date_of_birth': '2007-10-11', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Michael', 'middle_names': 'Lisa', 'last_name': 'Allen', 'date_of_birth': '2007-10-11', 'score': 60, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hawkins-Banks', 'company_number': 269606444, 'company_type': 'Limited Company', 'incorporation_date': '2006-04-12', 'liabilities': 45000.0, 'score': 82, 'opinion': 'Outstanding', 'turnover': 67198000.0, 'number_of_employees': 644, 'region': 'Scotland', 'assets': 1667000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 37.044444444444444
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Michele', 'middle_names': 'Philip', 'last_name': 'Brooks', 'date_of_birth': '1928-01-17', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Michele', 'middle_names': 'Philip', 'last_name': 'Brooks', 'date_of_birth': '1928-01-17', 'score': 27, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Castro, King and Nguyen', 'company_number': 601614017, 'company_type': 'Limited Company', 'incorporation_date': '1984-04-22', 'liabilities': 24000.0, 'score': 56, 'opinion': 'Outstanding', 'turnover': 20335000.0, 'number_of_employees': 1174, 'region': 'Scotland', 'assets': 14438000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 601.5833333333334
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kevin', 'middle_names': 'Adam', 'last_name': 'Chandler', 'date_of_birth': '1907-07-01', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Kevin', 'middle_names': 'Adam', 'last_name': 'Chandler', 'date_of_birth': '1907-07-01', 'score': 92, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Floyd Group', 'company_number': 549364224, 'company_type': 'Limited Company', 'incorporation_date': '2008-05-07', 'liabilities': 0.0, 'score': 76, 'opinion': 'Outstanding', 'turnover': 0.0, 'number_of_employees': 374, 'region': 'North West', 'assets': 499000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Adam', 'middle_names': 'Christopher', 'last_name': 'Hayes', 'date_of_birth': '1915-09-20', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Adam', 'middle_names': 'Christopher', 'last_name': 'Hayes', 'date_of_birth': '1915-09-20', 'score': 78, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Greer-Escobar', 'company_number': 574285550, 'company_type': 'Limited Company', 'incorporation_date': '1990-08-11', 'liabilities': 11000.0, 'score': 18, 'opinion': 'Outstanding', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 88000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 8.0
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Haley', 'middle_names': 'Ashley', 'last_name': 'Mcpherson', 'date_of_birth': '1956-02-02', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Haley', 'middle_names': 'Ashley', 'last_name': 'Mcpherson', 'date_of_birth': '1956-02-02', 'score': 97, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 14, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Smith-Pennington', 'company_number': 494372398, 'company_type': 'Limited Company', 'incorporation_date': '2003-06-26', 'liabilities': 49000.0, 'score': 55, 'opinion': 'Woeful', 'turnover': 17000.0, 'number_of_employees': 1, 'region': 'North East', 'assets': 61000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.2448979591836735
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brady', 'middle_names': 'Bryan', 'last_name': 'Gregory', 'date_of_birth': '1999-09-10', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Brady', 'middle_names': 'Bryan', 'last_name': 'Gregory', 'date_of_birth': '1999-09-10', 'score': 77, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 5, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Johnson and Sons', 'company_number': 270510888, 'company_type': 'Limited Company', 'incorporation_date': '2003-06-24', 'liabilities': 112000.0, 'score': 60, 'opinion': 'Woeful', 'turnover': 2276000.0, 'number_of_employees': 15, 'region': 'London', 'assets': 88000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7857142857142857
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ryan', 'middle_names': 'Heather', 'last_name': 'Greene', 'date_of_birth': '2000-05-11', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Ryan', 'middle_names': 'Heather', 'last_name': 'Greene', 'date_of_birth': '2000-05-11', 'score': 66, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Macias LLC', 'company_number': 472208257, 'company_type': 'Limited Company', 'incorporation_date': '2004-03-29', 'liabilities': 70000.0, 'score': 74, 'opinion': 'Good', 'turnover': 17632000.0, 'number_of_employees': 34, 'region': 'Northern Ireland', 'assets': 2495000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 35.642857142857146
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ashley', 'middle_names': 'Matthew', 'last_name': 'Scott', 'date_of_birth': '1967-09-20', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Ashley', 'middle_names': 'Matthew', 'last_name': 'Scott', 'date_of_birth': '1967-09-20', 'score': 88, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Martinez Group', 'company_number': 35198997, 'company_type': 'Limited Company', 'incorporation_date': '2010-12-06', 'liabilities': 15000.0, 'score': 4, 'opinion': 'Poor', 'turnover': 67000.0, 'number_of_employees': 1, 'region': 'Yorkshire and the Humber', 'assets': 79000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 5.266666666666667
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Brian', 'middle_names': 'Rodney', 'last_name': 'Morgan', 'date_of_birth': '1934-06-12', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Brian', 'middle_names': 'Rodney', 'last_name': 'Morgan', 'date_of_birth': '1934-06-12', 'score': 76, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Horn, Allen and Jacobson', 'company_number': 943042700, 'company_type': 'Limited Company', 'incorporation_date': '1999-03-28', 'liabilities': 832000.0, 'score': 65, 'opinion': 'Poor', 'turnover': 13404000.0, 'number_of_employees': 2326, 'region': 'Scotland', 'assets': 1919000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.3064903846153846
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Henry', 'middle_names': 'Deborah', 'last_name': 'Murray', 'date_of_birth': '1970-04-08', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Henry', 'middle_names': 'Deborah', 'last_name': 'Murray', 'date_of_birth': '1970-04-08', 'score': 41, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Rich, Davis and Bowen', 'company_number': 335487014, 'company_type': 'Limited Company', 'incorporation_date': '1993-09-07', 'liabilities': 109000.0, 'score': 55, 'opinion': 'Good', 'turnover': 54547000.0, 'number_of_employees': 18, 'region': 'Wales', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Tammy', 'middle_names': 'Susan', 'last_name': 'Peck', 'date_of_birth': '1919-04-27', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Tammy', 'middle_names': 'Susan', 'last_name': 'Peck', 'date_of_birth': '1919-04-27', 'score': 56, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Wagner, Carr and Jenkins', 'company_number': 745727358, 'company_type': 'Limited Company', 'incorporation_date': '1998-04-11', 'liabilities': 18000.0, 'score': 49, 'opinion': 'Outstanding', 'turnover': 1213047000.0, 'number_of_employees': 58, 'region': 'South East', 'assets': 181686000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 10093.666666666666
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Tony', 'middle_names': 'Shawn', 'last_name': 'Marshall', 'date_of_birth': '1925-07-10', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Tony', 'middle_names': 'Shawn', 'last_name': 'Marshall', 'date_of_birth': '1925-07-10', 'score': 99, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 2, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Hess-Allen', 'company_number': 250590477, 'company_type': 'Limited Company', 'incorporation_date': '1993-11-23', 'liabilities': 96000.0, 'score': 1, 'opinion': 'Poor', 'turnover': 29000.0, 'number_of_employees': 1, 'region': 'South West', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.11458333333333333
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Sara', 'middle_names': 'Phillip', 'last_name': 'Palmer', 'date_of_birth': '2013-09-16', 'amount_requested': 3000}, 'credit_report': {'first_name': 'Sara', 'middle_names': 'Phillip', 'last_name': 'Palmer', 'date_of_birth': '2013-09-16', 'score': 97, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Nolan, Kirk and Roth', 'company_number': 34454609, 'company_type': 'Limited Company', 'incorporation_date': '1986-12-30', 'liabilities': 91000.0, 'score': 43, 'opinion': 'Poor', 'turnover': 113000.0, 'number_of_employees': 6, 'region': 'West Midlands', 'assets': 29000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.31868131868131866
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jerry', 'middle_names': 'Angela', 'last_name': 'Sutton', 'date_of_birth': '1924-01-09', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Jerry', 'middle_names': 'Angela', 'last_name': 'Sutton', 'date_of_birth': '1924-01-09', 'score': 88, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 6}, 'company_report': {'company_name': 'Ortiz-Robbins', 'company_number': 886419397, 'company_type': 'Limited Company', 'incorporation_date': '1974-07-22', 'liabilities': 86000.0, 'score': 36, 'opinion': 'Poor', 'turnover': 159000.0, 'number_of_employees': 4, 'region': 'North West', 'assets': 148000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.7209302325581395
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Bradley', 'middle_names': 'Christopher', 'last_name': 'Benjamin', 'date_of_birth': '1957-04-21', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Bradley', 'middle_names': 'Christopher', 'last_name': 'Benjamin', 'date_of_birth': '1957-04-21', 'score': 74, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 4, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Palmer LLC', 'company_number': 656626179, 'company_type': 'Limited Company', 'incorporation_date': '2010-05-01', 'liabilities': 14000.0, 'score': 30, 'opinion': 'Poor', 'turnover': 17000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 13000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.9285714285714286
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Andrew', 'middle_names': 'Krystal', 'last_name': 'Wright', 'date_of_birth': '1955-05-26', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Andrew', 'middle_names': 'Krystal', 'last_name': 'Wright', 'date_of_birth': '1955-05-26', 'score': 30, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Ferguson Inc', 'company_number': 764059619, 'company_type': 'Limited Company', 'incorporation_date': '1994-06-08', 'liabilities': 32000.0, 'score': 88, 'opinion': 'Good', 'turnover': 184890000.0, 'number_of_employees': 128, 'region': 'South East', 'assets': 16737000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 523.03125
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Felicia', 'middle_names': 'Brian', 'last_name': 'Miller', 'date_of_birth': '1990-02-25', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Felicia', 'middle_names': 'Brian', 'last_name': 'Miller', 'date_of_birth': '1990-02-25', 'score': 27, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 4, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Collins Inc', 'company_number': 261847738, 'company_type': 'Limited Company', 'incorporation_date': '2009-07-12', 'liabilities': 95000.0, 'score': 55, 'opinion': 'Outstanding', 'turnover': 29076000.0, 'number_of_employees': 335, 'region': 'Yorkshire and the Humber', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Cynthia', 'middle_names': 'Jessica', 'last_name': 'Jones', 'date_of_birth': '1996-03-09', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Cynthia', 'middle_names': 'Jessica', 'last_name': 'Jones', 'date_of_birth': '1996-03-09', 'score': 94, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Banks-Williams', 'company_number': 267975766, 'company_type': 'Limited Company', 'incorporation_date': '1972-06-01', 'liabilities': 232000.0, 'score': 79, 'opinion': 'Outstanding', 'turnover': 11816000.0, 'number_of_employees': 151, 'region': 'North East', 'assets': 156000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.6724137931034483
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Monica', 'middle_names': 'Karen', 'last_name': 'Roberts', 'date_of_birth': '1944-07-17', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Monica', 'middle_names': 'Karen', 'last_name': 'Roberts', 'date_of_birth': '1944-07-17', 'score': 94, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 14, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Mccarthy, Young and Conley', 'company_number': 673833115, 'company_type': 'Limited Company', 'incorporation_date': '1975-09-15', 'liabilities': 0.0, 'score': 65, 'opinion': 'Outstanding', 'turnover': 66406000.0, 'number_of_employees': 36, 'region': 'Yorkshire and the Humber', 'assets': 3005000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Aaron', 'middle_names': 'Kristie', 'last_name': 'Saunders', 'date_of_birth': '1957-06-14', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Aaron', 'middle_names': 'Kristie', 'last_name': 'Saunders', 'date_of_birth': '1957-06-14', 'score': 80, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 5, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Harris Ltd', 'company_number': 355269028, 'company_type': 'Limited Company', 'incorporation_date': '2006-01-01', 'liabilities': 0.0, 'score': 45, 'opinion': 'Good', 'turnover': 65000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 38000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Eric', 'middle_names': 'Stacy', 'last_name': 'Stewart', 'date_of_birth': '1919-12-22', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Eric', 'middle_names': 'Stacy', 'last_name': 'Stewart', 'date_of_birth': '1919-12-22', 'score': 95, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 1, 'missed_payments_last_12m': 5}, 'company_report': {'company_name': 'Thompson, Bowman and Miller', 'company_number': 941797022, 'company_type': 'Limited Company', 'incorporation_date': '2014-10-11', 'liabilities': 28000.0, 'score': 4, 'opinion': 'Woeful', 'turnover': 66000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ashley', 'middle_names': 'Rebecca', 'last_name': 'Rice', 'date_of_birth': '1984-07-15', 'amount_requested': 15000}, 'credit_report': {'first_name': 'Ashley', 'middle_names': 'Rebecca', 'last_name': 'Rice', 'date_of_birth': '1984-07-15', 'score': 93, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Mendoza-Huber', 'company_number': 604645298, 'company_type': 'Limited Company', 'incorporation_date': '1996-12-25', 'liabilities': 122000.0, 'score': 58, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 7, 'region': 'North West', 'assets': 220000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.8032786885245902
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Mark', 'middle_names': 'Angela', 'last_name': 'Jackson', 'date_of_birth': '1953-10-16', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Mark', 'middle_names': 'Angela', 'last_name': 'Jackson', 'date_of_birth': '1953-10-16', 'score': 74, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hayes-Edwards', 'company_number': 298045028, 'company_type': 'Limited Company', 'incorporation_date': '2008-07-02', 'liabilities': 0.0, 'score': 72, 'opinion': 'Poor', 'turnover': 77075000.0, 'number_of_employees': 157, 'region': 'London', 'assets': 78387000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Adrian', 'middle_names': 'Cheryl', 'last_name': 'Molina', 'date_of_birth': '2011-07-07', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Adrian', 'middle_names': 'Cheryl', 'last_name': 'Molina', 'date_of_birth': '2011-07-07', 'score': 98, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Snow Inc', 'company_number': 993296767, 'company_type': 'Limited Company', 'incorporation_date': '2018-08-31', 'liabilities': 18000.0, 'score': 52, 'opinion': 'Poor', 'turnover': 60000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 51000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.8333333333333335
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Whitney', 'middle_names': 'Jerry', 'last_name': 'Robinson', 'date_of_birth': '1921-09-01', 'amount_requested': 40000}, 'credit_report': {'first_name': 'Whitney', 'middle_names': 'Jerry', 'last_name': 'Robinson', 'date_of_birth': '1921-09-01', 'score': 91, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Ramos, Wood and Ford', 'company_number': 301896065, 'company_type': 'Limited Company', 'incorporation_date': '1980-06-24', 'liabilities': 0.0, 'score': 3, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'East', 'assets': 87000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 40000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Leslie', 'middle_names': 'Alexandra', 'last_name': 'Merritt', 'date_of_birth': '1993-09-02', 'score': 74, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Le, Joseph and Ryan', 'company_number': 165077028, 'company_type': 'Limited Company', 'incorporation_date': '2016-03-31', 'liabilities': 14000.0, 'score': 29, 'opinion': 'Woeful', 'turnover': 40000.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 14000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Scott', 'middle_names': 'Jay', 'last_name': 'Thornton', 'date_of_birth': '1913-03-21', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Scott', 'middle_names': 'Jay', 'last_name': 'Thornton', 'date_of_birth': '1913-03-21', 'score': 100, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 6, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Cole Group', 'company_number': 674260085, 'company_type': 'Limited Company', 'incorporation_date': '2010-11-18', 'liabilities': 48000.0, 'score': 95, 'opinion': 'Outstanding', 'turnover': 7550000.0, 'number_of_employees': 106, 'region': 'East', 'assets': 154633000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 3221.5208333333335
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Kevin', 'middle_names': 'Paul', 'last_name': 'Espinoza', 'date_of_birth': '2009-10-29', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Kevin', 'middle_names': 'Paul', 'last_name': 'Espinoza', 'date_of_birth': '2009-10-29', 'score': 94, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 4}, 'company_report': {'company_name': 'Jones Inc', 'company_number': 310866116, 'company_type': 'Limited Company', 'incorporation_date': '1973-07-24', 'liabilities': 30000.0, 'score': 67, 'opinion': 'Poor', 'turnover': 161000.0, 'number_of_employees': 6, 'region': 'Yorkshire and the Humber', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Andrew', 'middle_names': 'Julie', 'last_name': 'Turner', 'date_of_birth': '1905-02-23', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Andrew', 'middle_names': 'Julie', 'last_name': 'Turner', 'date_of_birth': '1905-02-23', 'score': 64, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Mendoza, Barron and Peterson', 'company_number': 874774194, 'company_type': 'Limited Company', 'incorporation_date': '2015-05-13', 'liabilities': 0.0, 'score': 43, 'opinion': 'Poor', 'turnover': 1129000.0, 'number_of_employees': 38, 'region': 'East Midlands', 'assets': 115000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 10000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'David', 'middle_names': 'Cynthia', 'last_name': 'Martin', 'date_of_birth': '1922-12-29', 'amount_requested': 5000}, 'credit_report': {'first_name': 'David', 'middle_names': 'Cynthia', 'last_name': 'Martin', 'date_of_birth': '1922-12-29', 'score': 80, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 23, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Hansen and Sons', 'company_number': 246918766, 'company_type': 'Limited Company', 'incorporation_date': '2011-09-13', 'liabilities': 24000.0, 'score': 94, 'opinion': 'Outstanding', 'turnover': 21804000.0, 'number_of_employees': 198, 'region': 'Northern Ireland', 'assets': 4396000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 183.16666666666666
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Cassandra', 'middle_names': 'Jessica', 'last_name': 'Bowman', 'date_of_birth': '1903-11-22', 'amount_requested': 25000}, 'credit_report': {'first_name': 'Cassandra', 'middle_names': 'Jessica', 'last_name': 'Bowman', 'date_of_birth': '1903-11-22', 'score': 56, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Jones, Taylor and Kelly', 'company_number': 261000828, 'company_type': 'Limited Company', 'incorporation_date': '1984-04-29', 'liabilities': 42000.0, 'score': 66, 'opinion': 'Outstanding', 'turnover': 92413000.0, 'number_of_employees': 4535, 'region': 'North West', 'assets': 18206000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 433.4761904761905
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 25000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'David', 'middle_names': 'Amanda', 'last_name': 'Montes', 'date_of_birth': '1979-06-08', 'amount_requested': 20000}, 'credit_report': {'first_name': 'David', 'middle_names': 'Amanda', 'last_name': 'Montes', 'date_of_birth': '1979-06-08', 'score': 40, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Daniels-Carney', 'company_number': 945712655, 'company_type': 'Limited Company', 'incorporation_date': '2015-05-23', 'liabilities': 305000.0, 'score': 39, 'opinion': 'Outstanding', 'turnover': 1203000.0, 'number_of_employees': 16, 'region': 'London', 'assets': 294000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.9639344262295082
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Joshua', 'middle_names': 'Connor', 'last_name': 'Pena', 'date_of_birth': '2012-08-23', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Joshua', 'middle_names': 'Connor', 'last_name': 'Pena', 'date_of_birth': '2012-08-23', 'score': 72, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 15, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Padilla PLC', 'company_number': 451781926, 'company_type': 'Limited Company', 'incorporation_date': '1994-07-24', 'liabilities': 23000.0, 'score': 17, 'opinion': 'Poor', 'turnover': 54000.0, 'number_of_employees': 1, 'region': 'North West', 'assets': 11000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.4782608695652174
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Matthew', 'middle_names': 'Angela', 'last_name': 'Valentine', 'date_of_birth': '1913-10-07', 'amount_requested': 10000}, 'credit_report': {'first_name': 'Matthew', 'middle_names': 'Angela', 'last_name': 'Valentine', 'date_of_birth': '1913-10-07', 'score': 94, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Flores, Ellis and Washington', 'company_number': 716911319, 'company_type': 'Limited Company', 'incorporation_date': '1996-01-01', 'liabilities': 62000.0, 'score': 47, 'opinion': 'Poor', 'turnover': 33000.0, 'number_of_employees': 1, 'region': 'West Midlands', 'assets': 55000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.8870967741935484
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'David', 'middle_names': 'Paul', 'last_name': 'Hubbard', 'date_of_birth': '1937-07-31', 'amount_requested': 15000}, 'credit_report': {'first_name': 'David', 'middle_names': 'Paul', 'last_name': 'Hubbard', 'date_of_birth': '1937-07-31', 'score': 75, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Frazier-Williams', 'company_number': 72210112, 'company_type': 'Limited Company', 'incorporation_date': '2007-02-01', 'liabilities': 63000.0, 'score': 46, 'opinion': 'Outstanding', 'turnover': 78021000.0, 'number_of_employees': 15619, 'region': 'West Midlands', 'assets': 27952000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 443.6825396825397
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 15000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jodi', 'middle_names': 'Robert', 'last_name': 'Stephens', 'date_of_birth': '2012-06-27', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Jodi', 'middle_names': 'Robert', 'last_name': 'Stephens', 'date_of_birth': '2012-06-27', 'score': 90, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 10, 'missed_payments_last_12m': 6}, 'company_report': {'company_name': 'Kelley, Sutton and Williamson', 'company_number': 396028129, 'company_type': 'Limited Company', 'incorporation_date': '1982-11-19', 'liabilities': 248000.0, 'score': 41, 'opinion': 'Poor', 'turnover': 114517000.0, 'number_of_employees': 205, 'region': 'London', 'assets': 286000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.153225806451613
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 100000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'William', 'middle_names': 'Perry', 'last_name': 'Byrd', 'date_of_birth': '1945-02-02', 'amount_requested': 2000}, 'credit_report': {'first_name': 'William', 'middle_names': 'Perry', 'last_name': 'Byrd', 'date_of_birth': '1945-02-02', 'score': 95, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 2, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Preston LLC', 'company_number': 907561336, 'company_type': 'Limited Company', 'incorporation_date': '1989-01-22', 'liabilities': 59000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 31387000.0, 'number_of_employees': 2240, 'region': 'Yorkshire and the Humber', 'assets': 2711000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 45.94915254237288
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Cindy', 'middle_names': 'Heather', 'last_name': 'Rogers', 'date_of_birth': '1963-09-01', 'amount_requested': 2000}, 'credit_report': {'first_name': 'Cindy', 'middle_names': 'Heather', 'last_name': 'Rogers', 'date_of_birth': '1963-09-01', 'score': 79, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 20, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Richardson, Anthony and White', 'company_number': 947759716, 'company_type': 'Limited Company', 'incorporation_date': '1978-03-01', 'liabilities': 36000.0, 'score': 20, 'opinion': 'Poor', 'turnover': 236000.0, 'number_of_employees': 6, 'region': 'West Midlands', 'assets': 50000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.3888888888888888
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 2000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Annette', 'middle_names': 'Elizabeth', 'last_name': 'Payne', 'date_of_birth': '1921-03-30', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Annette', 'middle_names': 'Elizabeth', 'last_name': 'Payne', 'date_of_birth': '1921-03-30', 'score': 92, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 9, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Curtis, Miller and Deleon', 'company_number': 392160786, 'company_type': 'Limited Company', 'incorporation_date': '2014-12-03', 'liabilities': 28000.0, 'score': 8, 'opinion': 'Woeful', 'turnover': 71000.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'William', 'middle_names': 'Ian', 'last_name': 'Berry', 'date_of_birth': '2011-09-10', 'amount_requested': 20000}, 'credit_report': {'first_name': 'William', 'middle_names': 'Ian', 'last_name': 'Berry', 'date_of_birth': '2011-09-10', 'score': 89, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 6, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Smith, Henry and Newman', 'company_number': 303301223, 'company_type': 'Limited Company', 'incorporation_date': '1978-05-31', 'liabilities': 0.0, 'score': 42, 'opinion': 'Good', 'turnover': 43000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 31000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Chad', 'middle_names': 'Jeffrey', 'last_name': 'Jordan', 'date_of_birth': '1946-04-27', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Chad', 'middle_names': 'Jeffrey', 'last_name': 'Jordan', 'date_of_birth': '1946-04-27', 'score': 96, 'credit_limit': 0, 'credit_utilisation': 0.2, 'number_of_accounts': 1, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 6}, 'company_report': {'company_name': 'Hernandez, Carroll and Brown', 'company_number': 630889949, 'company_type': 'Limited Company', 'incorporation_date': '1995-10-31', 'liabilities': 10000.0, 'score': 10, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'Wales', 'assets': 23000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.3
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Ricky', 'middle_names': 'Allison', 'last_name': 'Black', 'date_of_birth': '1942-12-18', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Ricky', 'middle_names': 'Allison', 'last_name': 'Black', 'date_of_birth': '1942-12-18', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 19, 'missed_payments_last_12m': 7}, 'company_report': {'company_name': 'Hurley and Sons', 'company_number': 68292457, 'company_type': 'Limited Company', 'incorporation_date': '1974-05-19', 'liabilities': 83000.0, 'score': 72, 'opinion': 'Poor', 'turnover': 7626000.0, 'number_of_employees': 814, 'region': 'Scotland', 'assets': 84000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 1.0120481927710843
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Danielle', 'middle_names': 'Cynthia', 'last_name': 'Nguyen', 'date_of_birth': '1941-11-03', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Danielle', 'middle_names': 'Cynthia', 'last_name': 'Nguyen', 'date_of_birth': '1941-11-03', 'score': 75, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'James-Simon', 'company_number': 747735557, 'company_type': 'Limited Company', 'incorporation_date': '1990-05-14', 'liabilities': 104000.0, 'score': 99, 'opinion': 'Outstanding', 'turnover': 62131000.0, 'number_of_employees': 180, 'region': 'Wales', 'assets': 365416000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 3513.6153846153848
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Angela', 'middle_names': 'Kimberly', 'last_name': 'Smith', 'date_of_birth': '1953-10-20', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Angela', 'middle_names': 'Kimberly', 'last_name': 'Smith', 'date_of_birth': '1953-10-20', 'score': 56, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 12, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Morse, Romero and Schmidt', 'company_number': 582463191, 'company_type': 'Limited Company', 'incorporation_date': '1983-09-05', 'liabilities': 91000.0, 'score': 60, 'opinion': 'Good', 'turnover': 88727000.0, 'number_of_employees': 52, 'region': 'West Midlands', 'assets': 809000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 8.89010989010989
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Warren', 'middle_names': 'Joseph', 'last_name': 'Olsen', 'date_of_birth': '1931-05-29', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Warren', 'middle_names': 'Joseph', 'last_name': 'Olsen', 'date_of_birth': '1931-05-29', 'score': 81, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 2, 'age_of_oldest_account': 5, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Rhodes, Johnson and Lopez', 'company_number': 445406642, 'company_type': 'Limited Company', 'incorporation_date': '2002-07-01', 'liabilities': 20000.0, 'score': 0, 'opinion': 'Woeful', 'turnover': 105000.0, 'number_of_employees': 1, 'region': 'London', 'assets': 58000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.9
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 1000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Joshua', 'middle_names': 'Sarah', 'last_name': 'Garcia', 'date_of_birth': '1981-05-05', 'amount_requested': 20000}, 'credit_report': {'first_name': 'Joshua', 'middle_names': 'Sarah', 'last_name': 'Garcia', 'date_of_birth': '1981-05-05', 'score': 66, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 7, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Werner, Harvey and Lopez', 'company_number': 449942311, 'company_type': 'Limited Company', 'incorporation_date': '1998-03-10', 'liabilities': 28000.0, 'score': 32, 'opinion': 'Woeful', 'turnover': 42000.0, 'number_of_employees': 1, 'region': 'West Midlands', 'assets': 81000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2.892857142857143
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 20000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Julie', 'middle_names': 'Kimberly', 'last_name': 'Taylor', 'date_of_birth': '1945-01-08', 'amount_requested': 5000}, 'credit_report': {'first_name': 'Julie', 'middle_names': 'Kimberly', 'last_name': 'Taylor', 'date_of_birth': '1945-01-08', 'score': 93, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 16, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Gonzalez-Burnett', 'company_number': 579941119, 'company_type': 'Limited Company', 'incorporation_date': '2013-05-06', 'liabilities': 0.0, 'score': 17, 'opinion': 'Poor', 'turnover': 0.0, 'number_of_employees': 1, 'region': 'South East', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 5000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Nicholas', 'middle_names': 'Larry', 'last_name': 'Jensen', 'date_of_birth': '1909-02-15', 'amount_requested': 60000}, 'credit_report': {'first_name': 'Nicholas', 'middle_names': 'Larry', 'last_name': 'Jensen', 'date_of_birth': '1909-02-15', 'score': 64, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 0, 'age_of_oldest_account': 22, 'missed_payments_last_12m': 2}, 'company_report': {'company_name': 'Hamilton and Sons', 'company_number': 589017650, 'company_type': 'Limited Company', 'incorporation_date': '1983-06-23', 'liabilities': 535000.0, 'score': 83, 'opinion': 'Good', 'turnover': 112395000.0, 'number_of_employees': 70, 'region': 'Yorkshire and the Humber', 'assets': 15424000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 28.829906542056076
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 60000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Amanda', 'middle_names': 'Edward', 'last_name': 'Campbell', 'date_of_birth': '1913-09-16', 'amount_requested': 1000}, 'credit_report': {'first_name': 'Amanda', 'middle_names': 'Edward', 'last_name': 'Campbell', 'date_of_birth': '1913-09-16', 'score': 86, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 8, 'age_of_oldest_account': 9, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Williams, Ryan and Gibbs', 'company_number': 516977764, 'company_type': 'Limited Company', 'incorporation_date': '1995-08-17', 'liabilities': 217000.0, 'score': 20, 'opinion': 'Poor', 'turnover': 124000.0, 'number_of_employees': 6, 'region': 'East Midlands', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Christopher', 'middle_names': 'Ryan', 'last_name': 'Taylor', 'date_of_birth': '1997-02-28', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Christopher', 'middle_names': 'Ryan', 'last_name': 'Taylor', 'date_of_birth': '1997-02-28', 'score': 77, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 10, 'age_of_oldest_account': 21, 'missed_payments_last_12m': 0}, 'company_report': {'company_name': 'Campbell-Warren', 'company_number': 209977758, 'company_type': 'Limited Company', 'incorporation_date': '2005-07-19', 'liabilities': 0.0, 'score': 52, 'opinion': 'Outstanding', 'turnover': 848515000.0, 'number_of_employees': 275, 'region': 'West Midlands', 'assets': 614000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 2
+root - WARNING - decision made :
+root - WARNING - True
+root - WARNING - {'amount': 4000, 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Jackie', 'middle_names': 'Derrick', 'last_name': 'Brown', 'date_of_birth': '1987-10-14', 'amount_requested': 100000}, 'credit_report': {'first_name': 'Jackie', 'middle_names': 'Derrick', 'last_name': 'Brown', 'date_of_birth': '1987-10-14', 'score': 48, 'credit_limit': 5000, 'credit_utilisation': 0.2, 'number_of_accounts': 7, 'age_of_oldest_account': 11, 'missed_payments_last_12m': 1}, 'company_report': {'company_name': 'Rivera and Sons', 'company_number': 656942576, 'company_type': 'Limited Company', 'incorporation_date': '1973-08-01', 'liabilities': 76000.0, 'score': 50, 'opinion': 'Poor', 'turnover': 684000.0, 'number_of_employees': 7, 'region': 'North West', 'assets': 58000.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.7631578947368421
+root - WARNING - decision made :
+root - WARNING - False
+root - WARNING - {}
+root - WARNING - Getting decision for ~ 
+root - WARNING - {'basic_questions': {'first_name': 'Christopher', 'middle_names': 'Mario', 'last_name': 'Mccoy', 'date_of_birth': '1979-02-27', 'amount_requested': 4000}, 'credit_report': {'first_name': 'Christopher', 'middle_names': 'Mario', 'last_name': 'Mccoy', 'date_of_birth': '1979-02-27', 'score': 96, 'credit_limit': 1000, 'credit_utilisation': 0.2, 'number_of_accounts': 3, 'age_of_oldest_account': 8, 'missed_payments_last_12m': 3}, 'company_report': {'company_name': 'Poole LLC', 'company_number': 319965814, 'company_type': 'Limited Company', 'incorporation_date': '2013-05-21', 'liabilities': 127000.0, 'score': 43, 'opinion': 'Outstanding', 'turnover': 71410000.0, 'number_of_employees': 106, 'region': 'North West', 'assets': 0.0}}
+root - WARNING - evaluated decision:
+root - WARNING - 0.0
+root - WARNING - decision made :
+root - WARNING - False
 root - WARNING - {}

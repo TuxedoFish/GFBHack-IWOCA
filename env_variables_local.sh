@@ -1,8 +1,9 @@
 export FLASK_APP=wk_client
-export BANK_HOST=https://10.78.176.155
+export BANK_HOST=https://10.78.180.244
 export BANK_PORT=5000
 export BANK_USERNAME=TEAMLUCKY13
 export BANK_PASSWORD=Ch1MU5Cy31
 export SECRET_KEY=876523
-export FLASK_ENV=development
+export FLASK_ENV=production
 export PYTHONUNBUFFERED=TRUE
+export GUNICORN_CMD_ARGS="--access-logfile server-log.txt"

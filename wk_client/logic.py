@@ -296,7 +296,6 @@ def evaluate_decision(data):
     else:
         ratio = data['company_report']['assets'] / data['company_report']['liabilities']
 
-
     logging.warning("evaluated decision:")
     logging.warning(ratio)
     if ratio > 1:

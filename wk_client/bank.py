@@ -5,6 +5,7 @@ from flask import current_app as app
 
 import dateutil.parser
 import requests
+import logging
 
 from wk_client import db
 from wk_client.constants import REPAYMENT_TYPE
@@ -64,6 +65,7 @@ def _send_transaction_request(data):
 def _send_transaction(amount, account_to):
     data = {'account': BANK_ACCOUNT, 'account_to': account_to, 'amount': amount}
     response = _send_transaction_request(data)
+    logging.warning('transaction: request {}, response {}'.format(data, response))
     if response.status_code == 200:
         return json.loads(response.content)
     else:
