@@ -16,15 +16,6 @@ from wk_client.utils import get_repayment_amount, get_date
 Rate = namedtuple('rate', ['date', 'rate'])
 logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
-params_required = ['personal__score', 'personal__credit_limit',
-      'personal__credit_utilisation', 'personal__number_of_accounts',
-      'personal__age_of_oldest_account', 'personal__missed_payments_last_12m',
-      'personal__year_of_birth', 'company__liabilities', 'company__score',
-      'company__turnover', 'company__number_of_employees', 'company__assets',
-      'company__year_of_incorporation', 'loan_amount']
-
-XGB_classifier.
-
 class UserAccount(object):
     def __init__(self, user_id=None):
         self.user = models.User.query.get(user_id)
@@ -303,11 +294,28 @@ def check_requirements(data, requirements):
 def evaluate_decision(data):
     model_data = []
 
-    for param in params_required:
-        if(data[param] != None)
-            model_data.push(data[param])
+    company_params = ['liabilities', 'score',
+      'turnover', 'number_of_employees', 'assets',
+      'year_of_incorporation']
+
+    person_params = ['score', 'credit_limit',
+      'credit_utilisation', 'number_of_accounts',
+      'age_of_oldest_account', 'missed_payments_last_12m',
+      'year_of_birth']
+
+    for param in person_params:
+        if(data['credit_report'][param] != None):
+            model_data.append("personal__" + param : data[param])
         else:
-            model_data.push("")
+            model_data.push("" + param : "")
+
+    for param in company_params:
+        if(data['company_report'][param] != None):
+            model_data.append("company__" + param : data[param])
+        else:
+            model_data.push("" + param : "")
+
+    model_data.append("loan_amount" : data['basic_questions']['amount_requested'])
 
     model = XGB_classifier()
     condition = model._predict(model_data)
