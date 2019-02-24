@@ -16,6 +16,15 @@ from wk_client.utils import get_repayment_amount, get_date
 Rate = namedtuple('rate', ['date', 'rate'])
 logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 
+params_required = ['personal__score', 'personal__credit_limit',
+      'personal__credit_utilisation', 'personal__number_of_accounts',
+      'personal__age_of_oldest_account', 'personal__missed_payments_last_12m',
+      'personal__year_of_birth', 'company__liabilities', 'company__score',
+      'company__turnover', 'company__number_of_employees', 'company__assets',
+      'company__year_of_incorporation', 'loan_amount']
+
+XGB_classifier.
+
 class UserAccount(object):
     def __init__(self, user_id=None):
         self.user = models.User.query.get(user_id)
@@ -292,15 +301,21 @@ def check_requirements(data, requirements):
 
 
 def evaluate_decision(data):
-    model = XGB_classifier()
-    if(data['company_report']['liabilities']==0):
-        ratio = 2
-    else:
-        ratio = data['company_report']['assets'] / data['company_report']['liabilities']
+    model_data = []
 
-    logging.warning("evaluated decision:")
-    logging.warning(ratio)
-    if ratio > 1:
+    for param in params_required:
+        if(data[param] != None)
+            model_data.push(data[param])
+        else:
+            model_data.push("")
+
+    model = XGB_classifier()
+    condition = model._predict(model_data)
+
+    logging.warning("data passed to model : ")
+    logging.warning(model_data)
+
+    if condition:
         params = {'amount': data['basic_questions']['amount_requested'], 'interest_rate': 0.0005, 'fee_amount': 0, 'fee_rate': 0}
         return DecisionParams(approved=True, params=params)
     else:

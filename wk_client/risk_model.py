@@ -4,7 +4,7 @@ import os
 
 
 class XGB_classifier:
-
+    
     def __init__(self):
         retro_data = pd.read_csv(os.path.abspath('wk_client/retro_data.csv'))
 
